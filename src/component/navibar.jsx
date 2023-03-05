@@ -3,11 +3,12 @@ import { Navbar, Nav, Dropdown, Button, Image } from "react-bootstrap";
 import Icon from "@mdi/react";
 import { mdiCartOutline } from "@mdi/js";
 import { LOGO } from "../assets/index";
+import { Link } from "react-router-dom";
 
 class NaviBar extends React.Component {
   render() {
     return (
-      <Navbar className="px-5" style={styles.navibar} expand="lg">
+      <Navbar fixed="top" className="px-5" style={styles.navibar} expand="lg">
         <Navbar.Brand href="#home" style={styles.navfont}>
           <Image src={LOGO} style={styles.image} />
         </Navbar.Brand>
@@ -16,6 +17,9 @@ class NaviBar extends React.Component {
           <Nav className="me-auto">
             <Nav.Link href="#home" style={styles.navfont}>
               Home
+            </Nav.Link>
+            <Nav.Link href="#link" style={styles.navfont}>
+              Product
             </Nav.Link>
             <Nav.Link href="#link" style={styles.navfont}>
               Contact Us
@@ -30,8 +34,12 @@ class NaviBar extends React.Component {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Login</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Register</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/login">
+                Login
+              </Dropdown.Item>
+              <Dropdown.Item as={Link} to="/register">
+                Sign In
+              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </Navbar.Collapse>
@@ -42,7 +50,7 @@ class NaviBar extends React.Component {
 
 const styles = {
   navibar: {
-    backgroundColor: "#000051",
+    backgroundColor: "rgba(0, 25, 112, 0.7)",
   },
   btn: {
     border: "none",
