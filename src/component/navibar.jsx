@@ -50,7 +50,7 @@ class NaviBar extends React.Component {
 
 const styles = {
   navibar: {
-    backgroundColor: "rgba(0, 25, 112, 0.7)",
+    // backgroundColor: "rgba(0, 25, 112, 0.7)",
   },
   btn: {
     border: "none",

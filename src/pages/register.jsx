@@ -73,7 +73,7 @@ class Register extends React.Component {
             </Button>
             <h3 style={styles.font}>
               <b>
-                Continues <Link to="/login">Sign In</Link>
+                Continues <Link to="/login">Login</Link>
               </b>
             </h3>
           </div>
