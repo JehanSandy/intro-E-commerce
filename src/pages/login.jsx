@@ -2,7 +2,7 @@ import React from "react";
 import { InputGroup, Form, Button, Modal } from "react-bootstrap";
 import Icon from "@mdi/react";
 import { mdiAccountCircle, mdiEyeOutline, mdiEyeOff } from "@mdi/js";
-import { Link, redirect } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { connect } from "react-redux";
 import { Login, errorLoginFalse } from "../redux/action";
 
@@ -38,10 +38,11 @@ class LoginPage extends React.Component {
 
   render() {
     // cek apakah username sudah ada atau belum
-    if (this.props.username) {
-      return redirect("/");
-    }
+    const username = this.props.username;
     console.log(this.props.username);
+    if (username) {
+      return <Navigate to="/" />;
+    }
 
     return (
       <div style={styles.cont}>

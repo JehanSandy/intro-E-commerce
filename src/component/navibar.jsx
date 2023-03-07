@@ -4,6 +4,8 @@ import Icon from "@mdi/react";
 import { mdiCartOutline } from "@mdi/js";
 import { LOGO } from "../assets/index";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { logOut } from "../redux/action";
 
 class NaviBar extends React.Component {
   render() {
@@ -30,16 +32,28 @@ class NaviBar extends React.Component {
           </Button>{" "}
           <Dropdown style={{ marginLeft: "10px" }} className="px-1">
             <Dropdown.Toggle style={styles.btn} id="dropdown-basic">
-              Username
+              {this.props.username ? this.props.username : "Username"}
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item as={Link} to="/login">
-                Login
-              </Dropdown.Item>
-              <Dropdown.Item as={Link} to="/register">
-                Sign In
-              </Dropdown.Item>
+              {this.props.username ? (
+                <>
+                  <Dropdown.Item>Profile</Dropdown.Item>
+                  <Dropdown.Item>History</Dropdown.Item>
+                  <Dropdown.Item onClick={this.props.logOut}>
+                    Log Out
+                  </Dropdown.Item>
+                </>
+              ) : (
+                <>
+                  <Dropdown.Item as={Link} to="/login">
+                    Login
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/register">
+                    Sign In
+                  </Dropdown.Item>
+                </>
+              )}
             </Dropdown.Menu>
           </Dropdown>
         </Navbar.Collapse>
@@ -64,4 +78,10 @@ const styles = {
   },
 };
 
-export default NaviBar;
+const mapStateToProps = (state) => {
+  return {
+    username: state.userReducer.username,
+  };
+};
+
+export default connect(mapStateToProps, { logOut })(NaviBar);

@@ -7,7 +7,14 @@ import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/login";
 import Register from "./pages/register";
 
+import { keepLogin } from "./redux/action";
+import { connect } from "react-redux";
+
 class App extends React.Component {
+  componentDidMount() {
+    let id = localStorage.getItem("idUser");
+    this.props.keepLogin(id);
+  }
   render() {
     return (
       <div>
@@ -22,4 +29,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default connect(null, { keepLogin })(App);
