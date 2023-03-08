@@ -2,6 +2,7 @@ import React from "react";
 import { InputGroup, Form, Button, Modal } from "react-bootstrap";
 import Icon from "@mdi/react";
 import { mdiAccountCircle, mdiEyeOutline, mdiEyeOff } from "@mdi/js";
+
 import { Link, Navigate } from "react-router-dom";
 import { connect } from "react-redux";
 import { Login, errorLoginFalse } from "../redux/action";
@@ -43,7 +44,6 @@ class LoginPage extends React.Component {
     if (username) {
       return <Navigate to="/" />;
     }
-
     return (
       <div style={styles.cont}>
         <div style={styles.contForm}>
