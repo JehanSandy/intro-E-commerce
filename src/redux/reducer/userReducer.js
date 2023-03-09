@@ -4,6 +4,8 @@ const INITIAL_STATE = {
   password: "",
   role: "",
   errorLogin: false,
+  regisErr: [false, ""],
+  regisSuccess: false,
 };
 
 const userReducer = (state = INITIAL_STATE, action) => {
@@ -28,6 +30,21 @@ const userReducer = (state = INITIAL_STATE, action) => {
       };
     case "logOut":
       return INITIAL_STATE;
+    case "Username_Email_exist":
+      return {
+        ...state,
+        regisErr: [true, "Username or Email already exist"],
+      };
+    case "SignIn_false":
+      return {
+        ...state,
+        regisErr: [false, ""],
+      };
+    case "SuccessRegis":
+      return {
+        ...state,
+        regisSuccess: true,
+      };
     default:
       return state;
   }

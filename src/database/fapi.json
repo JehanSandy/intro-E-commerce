@@ -287,6 +287,13 @@
       "role": "user",
       "id": 4,
       "cart": []
+    },
+    {
+      "username": "jehans",
+      "email": "jehan@gmail.com",
+      "password": "jehan123!",
+      "role": "user",
+      "id": 5
     }
   ],
   "history": [
