@@ -1,1 +1,1 @@
-export const LOGO = require("./shoes_Logos.png");
+export const MainBG = require("./main.bg.jpg");

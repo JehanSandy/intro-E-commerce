@@ -1,18 +1,64 @@
 import React from "react";
-import { Navbar, Nav, Dropdown, Button, Image } from "react-bootstrap";
+import { Navbar, Nav, Dropdown, Button } from "react-bootstrap";
 import Icon from "@mdi/react";
 import { mdiCartOutline } from "@mdi/js";
-import { LOGO } from "../assets/index";
+
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { logOut } from "../redux/action";
 
 class NaviBar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      inHover: false,
+      inHovcart: false,
+    };
+  }
+  handleMouseEnter = () => {
+    this.setState({ inHover: true });
+  };
+
+  handleMouseLeave = () => {
+    this.setState({ inHover: false });
+  };
+
+  handleCartEnter = () => {
+    this.setState({ inHovcart: true });
+  };
+
+  handleCartLeave = () => {
+    this.setState({ inHovcart: false });
+  };
+
   render() {
+    const { inHover, inHovcart } = this.state;
+    const button = {
+      border: inHover ? "rgba(182, 137, 91)" : "1px solid rgba(255, 255, 255)",
+      backgroundColor: inHover ? "rgba(182, 137, 91)" : "rgba(1, 1, 1, 0.90)",
+      marginLeft: inHover ? "10px" : "10px",
+      transition: "0.3s ease-in-out",
+    };
+    const buttoncart = {
+      border: inHovcart
+        ? "rgba(182, 137, 91)"
+        : "1px solid rgba(255, 255, 255)",
+      backgroundColor: inHovcart ? "rgba(182, 137, 91)" : "rgba(1, 1, 1, 0.90)",
+      marginLeft: inHovcart ? "10px" : "10px",
+      transition: "0.3s ease-in-out",
+    };
+
     return (
-      <Navbar fixed="top" className="px-5" style={styles.navibar} expand="lg">
+      <Navbar
+        fixed="top"
+        className="px-5 py-0 mx-auto"
+        style={styles.navibar}
+        expand="lg"
+      >
         <Navbar.Brand href="#home" style={styles.navfont}>
-          <Image src={LOGO} style={styles.image} />
+          <h1>
+            Buku<span style={styles.spandfont}>_coffee</span>
+          </h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -27,15 +73,23 @@ class NaviBar extends React.Component {
               Contact Us
             </Nav.Link>
           </Nav>
-          <Button variant="outline-light">
+          <Button
+            style={buttoncart}
+            onMouseEnter={this.handleCartEnter}
+            onMouseLeave={this.handleCartLeave}
+          >
             <Icon path={mdiCartOutline} size={0.9} />
           </Button>{" "}
-          <Dropdown style={{ marginLeft: "10px" }} className="px-1">
-            <Dropdown.Toggle style={styles.btn} id="dropdown-basic">
+          <Dropdown className="px-1">
+            <Dropdown.Toggle
+              style={button}
+              onMouseEnter={this.handleMouseEnter}
+              id="dropdown-basic"
+            >
               {this.props.username ? this.props.username : "Username"}
             </Dropdown.Toggle>
 
-            <Dropdown.Menu>
+            <Dropdown.Menu show={inHover} onMouseLeave={this.handleMouseLeave}>
               {this.props.username ? (
                 <>
                   <Dropdown.Item>Profile</Dropdown.Item>
@@ -62,16 +116,23 @@ class NaviBar extends React.Component {
   }
 }
 
+// button syle
+
 const styles = {
   navibar: {
-    // backgroundColor: "rgba(0, 25, 112, 0.7)",
-  },
-  btn: {
-    border: "none",
-    backgroundColor: "#5343bae",
+    backgroundColor: "rgba(1, 1, 1, 0.8)",
+    padding: "0",
+    borderBottom: "1px solid rgb(81, 60, 40)",
   },
   navfont: {
-    color: "#ffffff",
+    color: "rgba(255, 255, 255)",
+    marginTop: "0",
+    marginBottom: "0",
+  },
+  spandfont: {
+    color: "rgba(182, 137, 91)",
+    marginTop: "0",
+    marginBottom: "0",
   },
   image: {
     height: "40px",

@@ -18,7 +18,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <NaviBar />
+        <div style={styles.naviContainer}>
+          <NaviBar />
+        </div>
         <Routes>
           <Route path="/" element={<HomePage />} exact />
           <Route path="/login" element={<LoginPage />} />
@@ -30,3 +32,11 @@ class App extends React.Component {
 }
 
 export default connect(null, { keepLogin })(App);
+
+const styles = {
+  naviContainer: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+};
