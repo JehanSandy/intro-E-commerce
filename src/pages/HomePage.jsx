@@ -1,5 +1,6 @@
 import React from "react";
 import Axios from "axios";
+import { Link } from "react-router-dom";
 import { Carousel, Card, Button } from "react-bootstrap";
 import "./home.css";
 import Icon from "@mdi/react";
@@ -39,8 +40,8 @@ class HomePage extends React.Component {
               debitis corporis ipsam a! Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Voluptate iure ea ad numquam. Culpa, sit.
             </p>
-            <a href="#" className="cta">
-              Beli Sekarang
+            <a href="#product" className="cta">
+              Buy Now
             </a>
           </main>
         </div>
@@ -51,9 +52,9 @@ class HomePage extends React.Component {
           </h1>
           <div className="ContAbout">
             <Carousel className="Carousel">
-              {this.state.carousel.map((item) => {
+              {this.state.carousel.map((item, index) => {
                 return (
-                  <Carousel.Item>
+                  <Carousel.Item key={index}>
                     <img
                       className="d-block w-100"
                       src={item.image}
@@ -61,10 +62,7 @@ class HomePage extends React.Component {
                     />
                     <Carousel.Caption>
                       <h3>{item.title}</h3>
-                      <p>
-                        Nulla vitae elit libero, a pharetra augue mollis
-                        interdum.
-                      </p>
+                      <p>{item.description}</p>
                     </Carousel.Caption>
                   </Carousel.Item>
                 );
@@ -91,16 +89,21 @@ class HomePage extends React.Component {
             </div>
           </div>
         </div>
+        <div id="product"></div>
 
         {/* card section */}
         <div className="ConCart">
           <h1>
-            <span>Our</span> Product
+            Our <span>Product</span>
           </h1>
           <div className="Cart">
-            {this.state.product.map((item) => {
+            {this.state.product.map((item, index) => {
               return (
-                <Card style={{ width: "18rem" }} className="comcart">
+                <Card
+                  style={{ width: "18rem" }}
+                  className="comcart"
+                  key={index}
+                >
                   <Card.Img
                     variant="top"
                     src={item.images[0]}
@@ -114,12 +117,16 @@ class HomePage extends React.Component {
                         <b>IDR {item.price.toLocaleString()}</b>
                       </Card.Text>
                       <div className="conBtn">
-                        <button>
+                        <Button className="btns">
                           <Icon path={mdiBookmarkMultipleOutline} size={1} />
-                        </button>
-                        <button>
+                        </Button>
+                        <Button
+                          className="btns"
+                          as={Link}
+                          to={`/detailPage?${item.id}`}
+                        >
                           <Icon path={mdiCartArrowDown} size={1} /> Buy Now
-                        </button>
+                        </Button>
                       </div>
                     </div>
                   </Card.Body>

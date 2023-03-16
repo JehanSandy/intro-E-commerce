@@ -36,7 +36,7 @@ class NaviBar extends React.Component {
     const button = {
       border: inHover ? "rgba(182, 137, 91)" : "1px solid rgba(255, 255, 255)",
       backgroundColor: inHover ? "rgba(182, 137, 91)" : "rgba(1, 1, 1, 0.90)",
-      marginLeft: inHover ? "10px" : "10px",
+      marginLeft: "10px",
       transition: "0.3s ease-in-out",
     };
     const buttoncart = {
@@ -44,7 +44,7 @@ class NaviBar extends React.Component {
         ? "rgba(182, 137, 91)"
         : "1px solid rgba(255, 255, 255)",
       backgroundColor: inHovcart ? "rgba(182, 137, 91)" : "rgba(1, 1, 1, 0.90)",
-      marginLeft: inHovcart ? "10px" : "10px",
+      marginLeft: "10px",
       transition: "0.3s ease-in-out",
     };
 
@@ -63,7 +63,7 @@ class NaviBar extends React.Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" style={styles.navfont}>
+            <Nav.Link as={Link} to="/" style={styles.navfont}>
               Home
             </Nav.Link>
             <Nav.Link href="#link" style={styles.navfont}>

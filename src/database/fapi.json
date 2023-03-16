@@ -2,257 +2,184 @@
   "products": [
     {
       "id": 1,
-      "name": "NIKE AIR ZOOM-TYPE",
-      "category": "Men, Sport, Sneaker",
-      "brand": "NIKE",
+      "name": "Manual Brew",
+      "category": "coffee",
+      "brand": "kintamani",
       "rating": [],
-      "colour": "BLACK/SUMMIT WHITE-MENTA-ORANGE TRANCE",
-      "description": "When it comes to basketball, there is no way around Nike – the brand with the Swoosh belongs to the game like dunks, three-pointers and cross-overs. Whether in the NBA, European leagues or your neighborhood...",
-      "price": 2500000,
+      "variant": "wine_process",
+      "description": "Manual brewing allows you to control all aspects of brewing your coffee: grind size, water to coffee ratio, water temperature, and brew time. Because you can play with and experiment with all of these elements, you can create the perfect cup for you.",
+      "price": 15000,
       "stock": 13,
       "images": [
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-AIR_ZOOM_TYPE-BLACK_SUMMIT_WHITE_MENTA_ORANGE_TRANCE-1.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-AIR_ZOOM_TYPE-BLACK_SUMMIT_WHITE_MENTA_ORANGE_TRANCE-2.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-AIR_ZOOM_TYPE-BLACK_SUMMIT_WHITE_MENTA_ORANGE_TRANCE-3.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-AIR_ZOOM_TYPE-BLACK_SUMMIT_WHITE_MENTA_ORANGE_TRANCE-4.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-AIR_ZOOM_TYPE-BLACK_SUMMIT_WHITE_MENTA_ORANGE_TRANCE-5.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-AIR_ZOOM_TYPE-BLACK_SUMMIT_WHITE_MENTA_ORANGE_TRANCE-6.jpg"
-      ]
+        "https://images.unsplash.com/photo-1657735086159-65032feb5f28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+        "https://images.unsplash.com/photo-1638993305218-bff3e4c4d27f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+        "https://images.unsplash.com/photo-1458872590620-5056e3311cad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
+        "https://images.unsplash.com/photo-1591933940638-d253adcdcb98?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+      ],
+      "imageDes": ["Manual brew options", "Aeropress", "V60", "Cold brew"]
     },
     {
       "id": 2,
-      "name": "JORDAN WESTBROOK ONE TAKE",
-      "category": "Men, Sport, Sneaker",
-      "brand": "JORDAN",
+      "name": "Espresso",
+      "category": "coffee",
+      "brand": "Puntang",
       "rating": [],
-      "colour": "WHITE/WHITE-BLACK-RAGE GREEN",
-      "description": "In the game of basketball Michael Jordan is a god. Number 23 of the Chicago Bulls has set the bar extremely high: His six championship rings, five mvp`s, numerous scoring titles, not to mention his ...",
-      "price": 1500000,
+      "variant": "original",
+      "description": "Espresso is a concentrated form of coffee served in small, strong shots and is the base for many coffee drinks. It's made from the same beans as coffee but is stronger, thicker, and higher in caffeine. However, because espresso is typically served in smaller servings than coffee, it has less caffeine per serving.",
+      "price": 20000,
       "stock": 10,
       "images": [
-        "https://kickz.akamaized.net/en/media/images/p/1200/JORDAN_WESTBROOK_ONE_TAKE-WHITE_WHITE_BLACK_RAGE_GREEN-1.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/JORDAN_WESTBROOK_ONE_TAKE-WHITE_WHITE_BLACK_RAGE_GREEN-2.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/JORDAN_WESTBROOK_ONE_TAKE-WHITE_WHITE_BLACK_RAGE_GREEN-3.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/JORDAN_WESTBROOK_ONE_TAKE-WHITE_WHITE_BLACK_RAGE_GREEN-4.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/JORDAN_WESTBROOK_ONE_TAKE-WHITE_WHITE_BLACK_RAGE_GREEN-5.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/JORDAN_WESTBROOK_ONE_TAKE-WHITE_WHITE_BLACK_RAGE_GREEN-6.jpg"
-      ]
+        "https://images.unsplash.com/photo-1612509590595-785e974ed690?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXNwcmVzc28lMjBjb2ZmZWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1595928642581-f50f4f3453a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=855&q=80",
+        "https://images.unsplash.com/photo-1515335352276-2fa88c590bb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+      ],
+      "imageDes": ["Fresh espresso", "Clean process", "Extra cold water"]
     },
     {
       "id": 3,
-      "name": "NIKE KYRIE 6",
-      "category": "Men, Sport, Sneaker",
-      "brand": "NIKE",
+      "name": "Latte Coffee",
+      "category": "coffee",
+      "brand": "east_java",
       "rating": [],
-      "colour": "WHITE/BLUE FURY-OPTI YELLOW-DIGITAL PINK",
-      "description": "The NIKE KYRIE 6 is the latest addition to the signature performance line of Kyrie Irving and Nike. If you think about Uncle Drew, immediately the explosive dribblings and his speed of direction changees of the impersonated ankle breaker comes into mind.",
-      "price": 1780000,
+      "variant": "full_wash",
+      "description": "A latte or caffè latte is a milk coffee that boasts a silky layer of foam as a real highlight to the drink. A true latte will be made up of one or two shots of espresso, steamed milk and a final, thin layer of frothed milk on top. These elements combined result in a balanced milky coffee that possesses an aesthetically pleasing look and a smooth texture.",
+      "price": 20000,
       "stock": 9,
       "images": [
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-KYRIE_6-WHITE_BLUE_FURY_OPTI_YELLOW_DIGITAL_PINK-1.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-KYRIE_6-WHITE_BLUE_FURY_OPTI_YELLOW_DIGITAL_PINK-2.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-KYRIE_6-WHITE_BLUE_FURY_OPTI_YELLOW_DIGITAL_PINK-3.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-KYRIE_6-WHITE_BLUE_FURY_OPTI_YELLOW_DIGITAL_PINK-4.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-KYRIE_6-WHITE_BLUE_FURY_OPTI_YELLOW_DIGITAL_PINK-5.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-KYRIE_6-WHITE_BLUE_FURY_OPTI_YELLOW_DIGITAL_PINK-6.jpg"
-      ]
+        "https://images.unsplash.com/photo-1593443320739-77f74939d0da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
+        "https://images.unsplash.com/photo-1507226983735-a838615193b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "https://images.unsplash.com/photo-1495774856032-8b90bbb32b32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+      ],
+      "imageDes": ["Beautiful art", "Made by love", "Deliver with passion"]
     },
     {
       "id": 4,
-      "name": "JORDAN AIR JORDAN 14 RETRO",
-      "category": "Men, Sport, Sneaker",
-      "brand": "JORDAN",
+      "name": "Cappuccino",
+      "category": "coffee",
+      "brand": "italian_coffee",
       "rating": [],
-      "colour": "BLACK/GYM RED-WHITE-OFF WHITE",
-      "description": "In the game of basketball Michael Jordan is a god. Number 23 of the Chicago Bulls has set the bar extremely high: His six championship rings, five mvp`s, numerous scoring titles, not to mention his ...",
-      "price": 2680000,
+      "variant": "original",
+      "description": "The cappuccino is a balanced coffee that’s a true test of any barista’s skills. Known for the even distribution of coffee and milk and served in a large cup with a dusting of chocolate on top, a cappuccino is one of the most popular coffee types in the UK, seconded only to the latte. If you’re a true frothy coffee lover you may be wondering what is a cappuccino and where it comes from. Keep reading to find out all you need to know…",
+      "price": 25000,
       "stock": 10,
       "images": [
-        "https://kickz.akamaized.net/en/media/images/p/1200/Air_Jordan_14_Retro-BLACK_GYM_RED_WHITE_OFF_WHITE-1.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/Air_Jordan_14_Retro-BLACK_GYM_RED_WHITE_OFF_WHITE-2.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/Air_Jordan_14_Retro-BLACK_GYM_RED_WHITE_OFF_WHITE-3.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/Air_Jordan_14_Retro-BLACK_GYM_RED_WHITE_OFF_WHITE-4.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/Air_Jordan_14_Retro-BLACK_GYM_RED_WHITE_OFF_WHITE-5.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/Air_Jordan_14_Retro-BLACK_GYM_RED_WHITE_OFF_WHITE-6.jpg"
+        "https://images.unsplash.com/photo-1523942839745-7848c839b661?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "https://images.unsplash.com/photo-1513806247431-b06f05479324?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+        "https://images.unsplash.com/photo-1516213335993-159eca2981af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+      ],
+      "imageDes": [
+        "Original italian taste",
+        "Strong character",
+        "bring you stay focus"
       ]
     },
     {
       "id": 5,
-      "name": "NIKE W NIKE REACT ELEMENT 55",
-      "category": "Women, Sport, Sneaker",
-      "brand": "NIKE",
+      "name": "Americano",
+      "category": "coffee",
+      "brand": "American_coffee",
       "rating": [],
-      "colour": "WHITE/FIRE PINK-SAPPHIRE-BARELY VOLT",
-      "description": "When it comes to basketball, there is no way around Nike – the brand with the Swoosh belongs to the game like dunks, three-pointers and cross-overs. Whether in the NBA, European leagues or your neighborhood ...",
-      "price": 2345000,
+      "variant": "original",
+      "description": "Americano is made by pouring hot water over one or two espresso shots, resulting in a drink of similar volume and strength to regular coffee.",
+      "price": 25000,
       "stock": 12,
       "images": [
-        "https://kickz.akamaized.net/en/media/images/p/1200/W_NIKE_REACT_ELEMENT_55-WHITE_FIRE_PINK_SAPPHIRE_BARELY_VOLT-1.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/W_NIKE_REACT_ELEMENT_55-WHITE_FIRE_PINK_SAPPHIRE_BARELY_VOLT-2.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/W_NIKE_REACT_ELEMENT_55-WHITE_FIRE_PINK_SAPPHIRE_BARELY_VOLT-3.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/W_NIKE_REACT_ELEMENT_55-WHITE_FIRE_PINK_SAPPHIRE_BARELY_VOLT-4.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/W_NIKE_REACT_ELEMENT_55-WHITE_FIRE_PINK_SAPPHIRE_BARELY_VOLT-5.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/W_NIKE_REACT_ELEMENT_55-WHITE_FIRE_PINK_SAPPHIRE_BARELY_VOLT-6.jpg"
+        "https://images.unsplash.com/photo-1593231269103-6667d6905882?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80",
+        "https://images.unsplash.com/photo-1498709112912-9be3173d30be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80",
+        "https://images.unsplash.com/photo-1531835207745-506a1bc035d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+      ],
+      "imageDes": [
+        "Abaut bolt and strong",
+        "Give you extra strength",
+        "Even bolt but fresh"
       ]
     },
     {
       "id": 6,
-      "name": "NIKE W AIR MAX 90",
-      "category": "Women, Sport, Sneaker",
-      "brand": "NIKE",
+      "name": "Macchiato",
+      "category": "coffee",
+      "brand": "italian_coffee",
       "rating": [],
-      "colour": "WHITE/PARTICLE GREY-ROSE-BLACK",
-      "description": "When it comes to basketball, there is no way around Nike – the brand with the Swoosh belongs to the game like dunks, three-pointers and cross-overs. Whether in the NBA, European leagues or your neighborhood ...",
-      "price": 1987300,
+      "variant": "milk_and_coffee",
+      "description": "A macchiato is primarily made from espresso. However, it offers an alternative to the classic espresso for those who want a robust flavor hit with a touch of creaminess provided by the spot of milk. Most countries have adopted the Italian name, but if you’re looking for a macchiato in Portugal, you may need to order ‘cafe pingado,’ which translates as ‘coffee with a drop’ (the splash of milk).",
+      "price": 20000,
       "stock": 10,
       "images": [
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-W_AIR_MAX_90-WHITE_PARTICLE_GREY_ROSE_BLACK-1.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-W_AIR_MAX_90-WHITE_PARTICLE_GREY_ROSE_BLACK-2.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-W_AIR_MAX_90-WHITE_PARTICLE_GREY_ROSE_BLACK-3.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-W_AIR_MAX_90-WHITE_PARTICLE_GREY_ROSE_BLACK-4.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-W_AIR_MAX_90-WHITE_PARTICLE_GREY_ROSE_BLACK-5.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/nike-W_AIR_MAX_90-WHITE_PARTICLE_GREY_ROSE_BLACK-6.jpg"
-      ]
+        "https://images.unsplash.com/photo-1527678357412-ef45dfbd9ecc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "https://images.unsplash.com/photo-1608591038246-4981d06b11e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=402&q=80",
+        "https://images.unsplash.com/photo-1674642387251-04a5f9320aa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+      ],
+      "imageDes": ["Warm on your soul", "Calm in focus", "Powering mind"]
     },
     {
       "id": 7,
-      "name": "VANS UA ERA (MIX & MATCH)",
-      "category": "Women, Converse",
-      "brand": "VANS",
+      "name": "Affogato",
+      "category": "dessert_coffee",
+      "brand": "italian_coffee",
       "rating": [],
-      "colour": "cadmium yellow/tidepool",
-      "description": "In 1966 Jim van Doren, Gordy Lee and Serge D''Elia founded the Van Doren Rubber Company. In a shop next to the factory they sold the Hi-Top (also Sk8-Hi). It was the first sneaker which ...",
-      "price": 678956,
+      "variant": "ice_coffee",
+      "description": "The affogato is a dessert made with two main ingredients: vanilla ice cream and espresso. Originally invented in Italy, the word “affogato” literally translates as “drowned” in English. This is fitting, as the affogato is no more than a scoop of ice cream “drowned” in espresso. ",
+      "price": 25000,
       "stock": 8,
       "images": [
-        "https://kickz.akamaized.net/en/media/images/p/1200/vans-UA_Era_Mix__Match-cadmium_yellow_tidepool-3.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/vans-UA_Era_Mix__Match-cadmium_yellow_tidepool-1.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/vans-UA_Era_Mix__Match-cadmium_yellow_tidepool-2.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/vans-UA_Era_Mix__Match-cadmium_yellow_tidepool-4.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/vans-UA_Era_Mix__Match-cadmium_yellow_tidepool-5.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/vans-UA_Era_Mix__Match-cadmium_yellow_tidepool-6.jpg"
+        "https://images.unsplash.com/photo-1652146909250-89cbd06f5608?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+        "https://plus.unsplash.com/premium_photo-1671559020732-25898f0c165a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "https://images.unsplash.com/photo-1662190680102-d958a06ff6f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+      ],
+      "imageDes": [
+        "Abaut coffee and happiness",
+        "Contain of love",
+        "Maintenance mood"
       ]
     },
     {
       "id": 8,
-      "name": "VANS UA CLASSIC SLIP-ON (BREAST CANCER)",
-      "category": "Women, Converse",
-      "brand": "VANS",
+      "name": "Ristretto",
+      "category": "coffee",
+      "brand": "American_coffee",
       "rating": [],
-      "colour": "cadmium yellow/tidepool",
-      "description": "In 1966 Jim van Doren, Gordy Lee and Serge D''Elia founded the Van Doren Rubber Company. In a shop next to the factory they sold the Hi-Top (also Sk8-Hi). It was the first sneaker which ...",
-      "price": 543786,
+      "variant": "original",
+      "description": "A ristretto is pulled from an espresso machine using the same process. The difference is that it is for a shorter amount of time and with half the water, resulting in a very concentrated shot of espresso. The variation in water and extraction time creates three differences between ristretto and regular espresso: quantity, taste, and caffeine level.",
+      "price": 20000,
       "stock": 12,
       "images": [
-        "https://kickz.akamaized.net/en/media/images/p/1200/vans-UA_Classic_Slip_On_Breast_Cancer-Breast_Cancer_nude_check_true_white-3.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/vans-UA_Classic_Slip_On_Breast_Cancer-Breast_Cancer_nude_check_true_white-1.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/vans-UA_Classic_Slip_On_Breast_Cancer-Breast_Cancer_nude_check_true_white-2.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/vans-UA_Classic_Slip_On_Breast_Cancer-Breast_Cancer_nude_check_true_white-4.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/vans-UA_Classic_Slip_On_Breast_Cancer-Breast_Cancer_nude_check_true_white-5.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/vans-UA_Classic_Slip_On_Breast_Cancer-Breast_Cancer_nude_check_true_white-6.jpg"
-      ]
-    },
-    {
-      "id": 9,
-      "name": "NIKE WMNS NIKE AIR MAX 90 SLIDE",
-      "category": "Women, Sandals, Flip Flop ",
-      "brand": "NIKE",
-      "rating": [],
-      "colour": "WHITE/SMOKE GREY-ROSE-LT SMOKE GREY",
-      "description": "When it comes to basketball, there is no way around Nike – the brand with the Swoosh belongs to the game like dunks, three-pointers and cross-overs. Whether in the NBA, European leagues or your neighborhood ...",
-      "price": 879650,
-      "stock": 15,
-      "images": [
-        "https://kickz.akamaized.net/en/media/images/p/1200/WMNS_NIKE_AIR_MAX_90_SLIDE-WHITE_SMOKE_GREY_ROSE_LT_SMOKE_GREY-1.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/WMNS_NIKE_AIR_MAX_90_SLIDE-WHITE_SMOKE_GREY_ROSE_LT_SMOKE_GREY-2.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/WMNS_NIKE_AIR_MAX_90_SLIDE-WHITE_SMOKE_GREY_ROSE_LT_SMOKE_GREY-3.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/WMNS_NIKE_AIR_MAX_90_SLIDE-WHITE_SMOKE_GREY_ROSE_LT_SMOKE_GREY-4.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/WMNS_NIKE_AIR_MAX_90_SLIDE-WHITE_SMOKE_GREY_ROSE_LT_SMOKE_GREY-5.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/WMNS_NIKE_AIR_MAX_90_SLIDE-WHITE_SMOKE_GREY_ROSE_LT_SMOKE_GREY-6.jpg"
-      ]
-    },
-    {
-      "id": 10,
-      "name": "PLEASURES UTOPIA CROCS BY PLEASURES",
-      "category": "Man, Sandals, Flip Flop ",
-      "brand": "PLEASURES",
-      "colour": "BLACK",
-      "rating": [],
-      "description": "When it comes to basketball, there is no way around Nike – the brand with the Swoosh belongs to the game like dunks, three-pointers and cross-overs. Whether in the NBA, European leagues or your neighborhood ...",
-      "price": 543000,
-      "stock": 13,
-      "images": [
-        "https://kickz.akamaized.net/en/media/images/p/1200/Utopia_Crocs_by_PLEASURES-Black-3.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/Utopia_Crocs_by_PLEASURES-Black-1.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/Utopia_Crocs_by_PLEASURES-Black-2.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/Utopia_Crocs_by_PLEASURES-Black-4.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/Utopia_Crocs_by_PLEASURES-Black-5.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/Utopia_Crocs_by_PLEASURES-Black-6.jpg"
-      ]
-    },
-    {
-      "id": 11,
-      "name": "PUMA CLYDE HARDWOOD RETRO",
-      "category": "Man, Sport, Basketball",
-      "brand": "PUMA",
-      "rating": [],
-      "colour": "Puma White-Orange Pop",
-      "description": "Der PUMA CLYDE HARDWOOD ehrt Walt \"Clyde\" Frazier, der mit dem originalen Puma Clyde in den 70ern zur Stilikone wurde. Auch der Clyde Hardwood verbindet wieder Performance mit Lifestyle und überzeugt damit auf ganzer Linie.",
-      "price": 2314870,
-      "stock": 9,
-      "images": [
-        "https://kickz.akamaized.net/en/media/images/p/1200/puma-Clyde_Hardwood_Retro-Puma_White_Orange_Pop-1.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/puma-Clyde_Hardwood_Retro-Puma_White_Orange_Pop-2.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/puma-Clyde_Hardwood_Retro-Puma_White_Orange_Pop-3.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/puma-Clyde_Hardwood_Retro-Puma_White_Orange_Pop-4.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/puma-Clyde_Hardwood_Retro-Puma_White_Orange_Pop-5.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/puma-Clyde_Hardwood_Retro-Puma_White_Orange_Pop-6.jpg"
-      ]
-    },
-    {
-      "id": 12,
-      "name": "ADIDAS PERFORMANCE MARQUEE MID - VEGAS",
-      "category": "Man, Sport, Basketball",
-      "brand": "ADIDAS",
-      "rating": [],
-      "colour": "legend ink/ftwr white/flash orange",
-      "description": "When it comes to basketball, there is no way around Nike – the brand with the Swoosh belongs to the game like dunks, three-pointers and cross-overs. Whether in the NBA, European leagues or your neighborhood ...",
-      "price": 1345650,
-      "stock": 10,
-      "images": [
-        "https://kickz.akamaized.net/en/media/images/p/1200/adidas_performance-MARQUEE_MID_VEGAS-legend_ink_ftwr_white_flash_orange-3.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/adidas_performance-MARQUEE_MID_VEGAS-legend_ink_ftwr_white_flash_orange-1.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/adidas_performance-MARQUEE_MID_VEGAS-legend_ink_ftwr_white_flash_orange-2.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/adidas_performance-MARQUEE_MID_VEGAS-legend_ink_ftwr_white_flash_orange-4.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/adidas_performance-MARQUEE_MID_VEGAS-legend_ink_ftwr_white_flash_orange-5.jpg",
-        "https://kickz.akamaized.net/en/media/images/p/1200/adidas_performance-MARQUEE_MID_VEGAS-legend_ink_ftwr_white_flash_orange-6.jpg"
-      ]
+        "https://images.unsplash.com/photo-1507546602-311207b97bfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80",
+        "https://images.unsplash.com/photo-1648524168748-0ff4ac3c79a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+        "https://images.unsplash.com/photo-1525109761343-dce55b0b1d55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+      ],
+      "imageDes": ["prememori dasdsa", "prememori dasda", "dsadsas das"]
     }
   ],
   "slider": [
     {
-      "image": "https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-      "title": "Fit your style"
+      "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "title": "Cozy Place",
+      "description": "We have cozy place to make you comfortable to read while drinking coffee"
     },
     {
-      "image": "https://cdn.pixabay.com/photo/2017/01/08/07/02/reishi-1962244_960_720.jpg",
-      "title": "Meddicen mushroom"
+      "image": "https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+      "title": "The best quality coffee only",
+      "description": "We serve only the best coffee for you, to make sure your day be come productive"
     },
     {
-      "image": "https://images.unsplash.com/photo-1515355758951-b4b20ba84c1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      "title": "Fall in love at first glance"
+      "image": "https://images.unsplash.com/photo-1495214783159-3503fd1b572d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "title": "Good food for good mood",
+      "description": "We got a lot of dessert and food to maintain your mood"
     },
     {
-      "image": "https://images.unsplash.com/photo-1543322748-33df6d3db806?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
-      "title": "Express your style with us"
+      "image": "https://images.unsplash.com/photo-1658314756249-8cecdff26d29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "title": "Best service for the great experience",
+      "description": "we provide the best service for your coffee drinking experience"
     },
     {
-      "image": "https://images.unsplash.com/photo-1575891942688-395c4fd38fb8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1367&q=80",
-      "title": "Made your day with smile"
+      "image": "https://images.unsplash.com/photo-1521012012373-6a85bade18da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+      "title": "Non Coffee menu",
+      "description": "Don't worries if you not coffee lovers we have non coffee menu for you"
     },
     {
-      "image": "https://images.unsplash.com/photo-1579199265916-436a773ce30b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      "title": "Find what your love"
+      "image": "https://images.unsplash.com/photo-1517028267-bcc3eba7474c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+      "title": "Quite Space",
+      "description": "You need a space? don't worries we have a quite space, so you can more comfortable and concentrated"
     }
   ],
   "users": [
@@ -270,7 +197,22 @@
       "password": "frengky123",
       "email": "frengky@gmail.com",
       "role": "user",
-      "cart": []
+      "cart": [
+        {
+          "id": 1,
+          "name": "Manual Brew",
+          "image": "https://images.unsplash.com/photo-1657735086159-65032feb5f28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+          "price": 15000,
+          "qty": 3
+        },
+        {
+          "id": 7,
+          "name": "Affogato",
+          "image": "https://images.unsplash.com/photo-1652146909250-89cbd06f5608?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+          "price": 25000,
+          "qty": 4
+        }
+      ]
     },
     {
       "username": "yoona01",

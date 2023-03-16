@@ -112,6 +112,7 @@ class Register extends React.Component {
       email,
       password,
       role: "user",
+      cart: [],
     };
     this.props.SignIn(username, email, obj);
     console.log(username, email, obj);

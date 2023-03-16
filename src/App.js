@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/login";
 import Register from "./pages/register";
+import DetailPage from "./pages/detailPage";
 
 import { keepLogin } from "./redux/action";
 import { connect } from "react-redux";
@@ -23,8 +24,16 @@ class App extends React.Component {
         </div>
         <Routes>
           <Route path="/" element={<HomePage />} exact />
+
           <Route path="/login" element={<LoginPage />} />
+
           <Route path="/register" element={<Register />} />
+
+          <Route
+            path="/detailPage"
+            element={<DetailPage />}
+            location={this.props.location}
+          />
         </Routes>
       </div>
     );
