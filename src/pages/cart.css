@@ -1,0 +1,40 @@
+:root {
+  --primary: #b68a5d;
+  --bg: #010101;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Popins", sans-serif;
+  background-color: var(--bg);
+  color: #ffffff;
+}
+.maincontainer {
+  background-color: #b68a5d;
+  /* width: 5rem; */
+  /* height: 5rem; */
+  margin-top: 11vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding: 1rem;
+}
+.container {
+  /* background-color: aqua; */
+  /* display: flex; */
+  width: 65rem;
+  /* height: 15rem; */
+  /* justify-content: space-around; */
+}
+.table {
+  text-align: center;
+}
+.tableimg {
+  width: 5rem;
+  height: 5.5rem;
+}

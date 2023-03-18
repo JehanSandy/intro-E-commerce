@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Dropdown, Button } from "react-bootstrap";
+import { Navbar, Nav, Dropdown, Button, Badge } from "react-bootstrap";
 import Icon from "@mdi/react";
 import { mdiCartOutline } from "@mdi/js";
 
@@ -8,46 +8,7 @@ import { connect } from "react-redux";
 import { logOut } from "../redux/action";
 
 class NaviBar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      inHover: false,
-      inHovcart: false,
-    };
-  }
-  handleMouseEnter = () => {
-    this.setState({ inHover: true });
-  };
-
-  handleMouseLeave = () => {
-    this.setState({ inHover: false });
-  };
-
-  handleCartEnter = () => {
-    this.setState({ inHovcart: true });
-  };
-
-  handleCartLeave = () => {
-    this.setState({ inHovcart: false });
-  };
-
   render() {
-    const { inHover, inHovcart } = this.state;
-    const button = {
-      border: inHover ? "rgba(182, 137, 91)" : "1px solid rgba(255, 255, 255)",
-      backgroundColor: inHover ? "rgba(182, 137, 91)" : "rgba(1, 1, 1, 0.90)",
-      marginLeft: "10px",
-      transition: "0.3s ease-in-out",
-    };
-    const buttoncart = {
-      border: inHovcart
-        ? "rgba(182, 137, 91)"
-        : "1px solid rgba(255, 255, 255)",
-      backgroundColor: inHovcart ? "rgba(182, 137, 91)" : "rgba(1, 1, 1, 0.90)",
-      marginLeft: "10px",
-      transition: "0.3s ease-in-out",
-    };
-
     return (
       <Navbar
         fixed="top"
@@ -73,23 +34,16 @@ class NaviBar extends React.Component {
               Contact Us
             </Nav.Link>
           </Nav>
-          <Button
-            style={buttoncart}
-            onMouseEnter={this.handleCartEnter}
-            onMouseLeave={this.handleCartLeave}
-          >
+          <Button as={Link} to="/cart" variant="dark">
             <Icon path={mdiCartOutline} size={0.9} />
+            <Badge bg="dark">{this.props.sumCar}</Badge>
           </Button>{" "}
           <Dropdown className="px-1">
-            <Dropdown.Toggle
-              style={button}
-              onMouseEnter={this.handleMouseEnter}
-              id="dropdown-basic"
-            >
+            <Dropdown.Toggle id="dropdown-basic" variant="dark">
               {this.props.username ? this.props.username : "Username"}
             </Dropdown.Toggle>
 
-            <Dropdown.Menu show={inHover} onMouseLeave={this.handleMouseLeave}>
+            <Dropdown.Menu>
               {this.props.username ? (
                 <>
                   <Dropdown.Item>Profile</Dropdown.Item>
@@ -142,6 +96,7 @@ const styles = {
 const mapStateToProps = (state) => {
   return {
     username: state.userReducer.username,
+    sumCar: state.userReducer.cart.length,
   };
 };
 

@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/login";
 import Register from "./pages/register";
 import DetailPage from "./pages/detailPage";
+import CartPage from "./pages/cart";
 
 import { keepLogin } from "./redux/action";
 import { connect } from "react-redux";
@@ -29,11 +30,9 @@ class App extends React.Component {
 
           <Route path="/register" element={<Register />} />
 
-          <Route
-            path="/detailPage"
-            element={<DetailPage />}
-            location={this.props.location}
-          />
+          <Route path="/detailPage" element={<DetailPage />} />
+
+          <Route path="/cart" element={<CartPage />} />
         </Routes>
       </div>
     );

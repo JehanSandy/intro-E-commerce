@@ -46,9 +46,10 @@ class DetailPage extends React.Component {
       name: products.name,
       image: products.images[0],
       price: products.price,
+      stock: products.stock,
       qty,
     };
-    console.log(obj);
+    // console.log(obj);
     this.props.checkout(id, obj);
   };
 
@@ -71,6 +72,8 @@ class DetailPage extends React.Component {
     if (onLogin) {
       return <Navigate to="/login" />;
     }
+    // console.log(this.state.products);
+    // console.log(this.props.username);
     return (
       <div className="mainContainer">
         <div className="showProduct">
@@ -122,7 +125,7 @@ class DetailPage extends React.Component {
                   </Button>
                   <Form.Control
                     className="form"
-                    type="number"
+                    type="text"
                     placeholder="0"
                     value={qty}
                     onChange={(e) => this.setState({ qty: +e.target.value })}
@@ -191,6 +194,7 @@ const mapStateToProps = (state) => {
   return {
     username: state.userReducer.username,
     id: state.userReducer.id,
+    userCart: state.userReducer.cart,
   };
 };
 
