@@ -3,7 +3,7 @@ import "./detailPage.css";
 import Axios from "axios";
 import { Button, Form, Carousel, Modal } from "react-bootstrap";
 import { connect } from "react-redux";
-import { checkout } from "../redux/action";
+import { addCart } from "../redux/action";
 import { Navigate } from "react-router-dom";
 const url = "http://localhost:2000/";
 
@@ -25,12 +25,12 @@ class DetailPage extends React.Component {
     this.setState({ qty: this.state.qty - 1 });
   };
 
-  oncheckOut = () => {
+  onaddCart = () => {
     let qty = +this.refs.quantity.value;
     let username = this.props.username;
     let id = this.props.id;
     const { products } = this.state;
-    if (qty == 0) {
+    if (qty === 0) {
       return this.setState({ qtyProct: [true, "Please add quantity product"] });
     } else if (qty > this.state.products.stock) {
       return this.setState({
@@ -50,7 +50,7 @@ class DetailPage extends React.Component {
       qty,
     };
     // console.log(obj);
-    this.props.checkout(id, obj);
+    this.props.addCart(id, obj);
   };
 
   onlogin = () => {
@@ -155,7 +155,7 @@ class DetailPage extends React.Component {
               />
             </div>
             <div className="buyButton">
-              <Button onClick={this.oncheckOut}>add to card</Button>
+              <Button onClick={this.onaddCart}>add to card</Button>
               <Button>Buy Now</Button>
             </div>
           </div>
@@ -198,4 +198,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { checkout })(DetailPage);
+export default connect(mapStateToProps, { addCart })(DetailPage);

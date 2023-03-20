@@ -1,7 +1,7 @@
 import Axios from "axios";
 let url = "http://localhost:2000/";
 
-export const checkout = (id, data) => {
+export const addCart = (id, data) => {
   return (dispatch) => {
     Axios.get(`${url}users/${id}`).then((res) => {
       let temCart = res.data.cart;
@@ -48,6 +48,24 @@ export const SaveCart = (idUser, indexProd, qtyUpdate) => {
       //mengganti data cart dengan data qty produk yg telah di edit
       tempCart.splice(indexProd, 1, temProd);
       Axios.patch(`${url}users/${idUser}`, { cart: tempCart }).then((res) => {
+        Axios.get(`${url}users/${idUser}`).then((res) => {
+          return dispatch({
+            type: "Login",
+            payload: res.data,
+          });
+        });
+      });
+    });
+  };
+};
+
+export const Checkout = (idUser, history) => {
+  return (dispatch) => {
+    // kosongkan cart user yg sedang aktif
+    Axios.patch(`${url}users/${idUser}`, { cart: [] }).then((res) => {
+      //untuk mencatat dan mengirim data histori ke database
+      Axios.post(`${url}history/`, history).then((res) => {
+        //update redux
         Axios.get(`${url}users/${idUser}`).then((res) => {
           return dispatch({
             type: "Login",

@@ -24,6 +24,20 @@ body {
   margin-right: 10vw;
   padding: 1rem;
 }
+.headCart {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+  padding-right: 2rem;
+  padding-left: 2rem;
+  align-items: center;
+}
+.headCart Button {
+  padding-top: none;
+  padding-bottom: none;
+  text-align: center;
+  height: 2rem;
+}
 .container {
   /* background-color: aqua; */
   /* display: flex; */
@@ -37,4 +51,10 @@ body {
 .tableimg {
   width: 5rem;
   height: 5.5rem;
+}
+
+.texErr {
+  margin-top: 1vh;
+  color: red;
+  font-size: 0.8rem;
 }
