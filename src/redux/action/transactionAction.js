@@ -61,17 +61,41 @@ export const SaveCart = (idUser, indexProd, qtyUpdate) => {
 
 export const Checkout = (idUser, history) => {
   return (dispatch) => {
-    // kosongkan cart user yg sedang aktif
-    Axios.patch(`${url}users/${idUser}`, { cart: [] }).then((res) => {
-      //untuk mencatat dan mengirim data histori ke database
-      Axios.post(`${url}history/`, history).then((res) => {
-        //update redux
-        Axios.get(`${url}users/${idUser}`).then((res) => {
+    //untuk mencatat dan mengirim data histori ke database
+    Axios.post(`${url}history`, history)
+      .then((res) => {
+        let idUser = localStorage.getItem("idUser");
+
+        Axios.get(`${url}history?idUser=${idUser}`).then((res) => {
+          console.log(res.data);
           return dispatch({
-            type: "Login",
+            type: "Get_History",
             payload: res.data,
           });
         });
+      })
+      .then((res) => {
+        // kosongkan cart user yg sedang aktif
+        Axios.patch(`${url}users/${idUser}`, { cart: [] }).then((res) => {
+          //update redux
+          Axios.get(`${url}users/${idUser}`).then((res) => {
+            return dispatch({
+              type: "Login",
+              payload: res.data,
+            });
+          });
+        });
+      });
+  };
+};
+
+export const onHistory = () => {
+  return (dispatch) => {
+    let idUser = localStorage.getItem("idUser");
+    Axios.get(`${url}history?idUser=${idUser}`).then((res) => {
+      return dispatch({
+        type: "Get_History",
+        payload: res.data,
       });
     });
   };

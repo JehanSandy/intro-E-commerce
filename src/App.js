@@ -8,6 +8,7 @@ import LoginPage from "./pages/login";
 import Register from "./pages/register";
 import DetailPage from "./pages/detailPage";
 import CartPage from "./pages/cart";
+import History from "./pages/history";
 
 import { keepLogin } from "./redux/action";
 import { connect } from "react-redux";
@@ -33,6 +34,8 @@ class App extends React.Component {
           <Route path="/detailPage" element={<DetailPage />} />
 
           <Route path="/cart" element={<CartPage />} />
+
+          <Route path="/tohistory" element={<History />} />
         </Routes>
       </div>
     );

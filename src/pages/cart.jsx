@@ -18,6 +18,7 @@ class CartPage extends React.Component {
       confirmPass: [false, ""],
       confpassErr: [false, ""],
       visibility: false,
+      tohistory: false,
     };
   }
   showImage = () => {
@@ -204,13 +205,15 @@ class CartPage extends React.Component {
         product: this.props.cart,
       };
       this.props.Checkout(idUser, history);
-      this.setState({ confirmPass: [false, ""] });
+      this.setState({ confirmPass: [false, ""], tohistory: true });
     }
   };
 
   render() {
     if (!this.props.username) {
       return <Navigate to="/login" />;
+    } else if (this.state.tohistory) {
+      return <Navigate to="/tohistory" />;
     }
     // console.log(this.props.username);
     // console.log(this.props.idUser);

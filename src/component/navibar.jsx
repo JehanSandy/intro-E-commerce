@@ -47,7 +47,9 @@ class NaviBar extends React.Component {
               {this.props.username ? (
                 <>
                   <Dropdown.Item>Profile</Dropdown.Item>
-                  <Dropdown.Item>History</Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/tohistory">
+                    History
+                  </Dropdown.Item>
                   <Dropdown.Item onClick={this.props.logOut}>
                     Log Out
                   </Dropdown.Item>
