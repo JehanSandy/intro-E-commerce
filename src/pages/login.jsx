@@ -154,8 +154,8 @@ class LoginPage extends React.Component {
 }
 const styles = {
   cont: {
-    backgroundImage:
-      "url(https://images.unsplash.com/photo-1519305124423-5ccccff55da9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80)",
+    // backgroundImage:
+    //   "url(https://images.unsplash.com/photo-1519305124423-5ccccff55da9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80)",
     backgroundSize: "cover",
     backgroundPosition: "50% 65%",
     backgroundRepeat: "no-repeat",

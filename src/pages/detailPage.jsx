@@ -155,8 +155,13 @@ class DetailPage extends React.Component {
               />
             </div>
             <div className="buyButton">
-              <Button onClick={this.onaddCart}>add to card</Button>
-              <Button>Buy Now</Button>
+              <Button
+                onClick={this.onaddCart}
+                disabled={this.props.role === "admin"}
+              >
+                add to card
+              </Button>
+              <Button disabled={this.props.role === "admin"}>Buy Now</Button>
             </div>
           </div>
           <Modal show={qtyProct[0]} className="dalmod">
@@ -195,6 +200,7 @@ const mapStateToProps = (state) => {
     username: state.userReducer.username,
     id: state.userReducer.id,
     userCart: state.userReducer.cart,
+    role: state.userReducer.role,
   };
 };
 

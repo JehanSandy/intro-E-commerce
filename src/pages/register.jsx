@@ -273,8 +273,8 @@ class Register extends React.Component {
 
 const styles = {
   mainBackground: {
-    backgroundImage:
-      "url(https://images.unsplash.com/photo-1598633461148-98668f2b67d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80)",
+    // backgroundImage:
+    //   "url(https://images.unsplash.com/photo-1598633461148-98668f2b67d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80)",
     backgroundSize: "cover",
     // backgroundPosition: "0% 30%",
     backgroundRepeat: "no-repeat",

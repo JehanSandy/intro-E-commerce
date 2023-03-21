@@ -117,6 +117,22 @@ body {
 }
 
 /* cart */
+.arrowproduct {
+  display: flex;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+  width: 15rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.arrowproduct p {
+  text-align: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .Cart {
   display: flex;
   margin-left: 3rem;

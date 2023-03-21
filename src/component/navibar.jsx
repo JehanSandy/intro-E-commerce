@@ -9,6 +9,7 @@ import { logOut } from "../redux/action";
 
 class NaviBar extends React.Component {
   render() {
+    console.log(this.props.role);
     return (
       <Navbar
         fixed="top"
@@ -34,10 +35,12 @@ class NaviBar extends React.Component {
               Contact Us
             </Nav.Link>
           </Nav>
-          <Button as={Link} to="/cart" variant="dark">
-            <Icon path={mdiCartOutline} size={0.9} />
-            <Badge bg="dark">{this.props.sumCar}</Badge>
-          </Button>{" "}
+          {this.props.role === "admin" ? null : (
+            <Button as={Link} to="/cart" variant="dark">
+              <Icon path={mdiCartOutline} size={0.9} />
+              <Badge bg="dark">{this.props.sumCar}</Badge>
+            </Button>
+          )}
           <Dropdown className="px-1">
             <Dropdown.Toggle id="dropdown-basic" variant="dark">
               {this.props.username ? this.props.username : "Username"}
@@ -47,8 +50,15 @@ class NaviBar extends React.Component {
               {this.props.username ? (
                 <>
                   <Dropdown.Item>Profile</Dropdown.Item>
-                  <Dropdown.Item as={Link} to="/tohistory">
-                    History
+                  <Dropdown.Item
+                    as={Link}
+                    to={
+                      this.props.role === "admin"
+                        ? "/historyAdmin"
+                        : "/tohistory"
+                    }
+                  >
+                    {this.props.role === "admin" ? "History Admin" : "History"}
                   </Dropdown.Item>
                   <Dropdown.Item onClick={this.props.logOut}>
                     Log Out
@@ -99,6 +109,7 @@ const mapStateToProps = (state) => {
   return {
     username: state.userReducer.username,
     sumCar: state.userReducer.cart.length,
+    role: state.userReducer.role,
   };
 };
 
