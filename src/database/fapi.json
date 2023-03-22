@@ -3,78 +3,69 @@
     {
       "id": 1,
       "name": "Manual Brew",
-      "category": "coffee",
+      "category": ["coffee"],
       "brand": "kintamani",
       "rating": [],
       "variant": "wine_process",
       "description": "Manual brewing allows you to control all aspects of brewing your coffee: grind size, water to coffee ratio, water temperature, and brew time. Because you can play with and experiment with all of these elements, you can create the perfect cup for you.",
       "price": 15000,
       "stock": 13,
+      "note": "",
       "images": [
         "https://images.unsplash.com/photo-1657735086159-65032feb5f28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
         "https://images.unsplash.com/photo-1638993305218-bff3e4c4d27f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
         "https://images.unsplash.com/photo-1458872590620-5056e3311cad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
         "https://images.unsplash.com/photo-1591933940638-d253adcdcb98?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
       ],
-      "imageDes": [
-        "Manual brew options",
-        "Aeropress",
-        "V60",
-        "Cold brew"
-      ]
+      "imageDes": ["Manual brew options", "Aeropress", "V60", "Cold brew"]
     },
     {
       "id": 2,
       "name": "Espresso",
-      "category": "coffee",
+      "category": ["coffee"],
       "brand": "Puntang",
       "rating": [],
       "variant": "original",
       "description": "Espresso is a concentrated form of coffee served in small, strong shots and is the base for many coffee drinks. It's made from the same beans as coffee but is stronger, thicker, and higher in caffeine. However, because espresso is typically served in smaller servings than coffee, it has less caffeine per serving.",
       "price": 20000,
       "stock": 10,
+      "note": "",
       "images": [
         "https://images.unsplash.com/photo-1612509590595-785e974ed690?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXNwcmVzc28lMjBjb2ZmZWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
         "https://images.unsplash.com/photo-1595928642581-f50f4f3453a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=855&q=80",
         "https://images.unsplash.com/photo-1515335352276-2fa88c590bb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
       ],
-      "imageDes": [
-        "Fresh espresso",
-        "Clean process",
-        "Extra cold water"
-      ]
+      "imageDes": ["Fresh espresso", "Clean process", "Extra cold water"]
     },
     {
       "id": 3,
       "name": "Latte Coffee",
-      "category": "coffee",
+      "category": ["coffee"],
       "brand": "east_java",
       "rating": [],
       "variant": "full_wash",
       "description": "A latte or caffè latte is a milk coffee that boasts a silky layer of foam as a real highlight to the drink. A true latte will be made up of one or two shots of espresso, steamed milk and a final, thin layer of frothed milk on top. These elements combined result in a balanced milky coffee that possesses an aesthetically pleasing look and a smooth texture.",
       "price": 20000,
       "stock": 9,
+      "note": "",
       "images": [
         "https://images.unsplash.com/photo-1593443320739-77f74939d0da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
         "https://images.unsplash.com/photo-1507226983735-a838615193b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
         "https://images.unsplash.com/photo-1495774856032-8b90bbb32b32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
       ],
-      "imageDes": [
-        "Beautiful art",
-        "Made by love",
-        "Deliver with passion"
-      ]
+      "imageDes": ["Beautiful art", "Made by love", "Deliver with passion"]
     },
     {
       "id": 4,
       "name": "Cappuccino",
-      "category": "coffee",
+      "category": ["coffee"],
       "brand": "italian_coffee",
       "rating": [],
       "variant": "original",
       "description": "The cappuccino is a balanced coffee that’s a true test of any barista’s skills. Known for the even distribution of coffee and milk and served in a large cup with a dusting of chocolate on top, a cappuccino is one of the most popular coffee types in the UK, seconded only to the latte. If you’re a true frothy coffee lover you may be wondering what is a cappuccino and where it comes from. Keep reading to find out all you need to know…",
       "price": 25000,
       "stock": 10,
+      "note": "",
       "images": [
         "https://images.unsplash.com/photo-1523942839745-7848c839b661?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
         "https://images.unsplash.com/photo-1513806247431-b06f05479324?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
@@ -89,13 +80,14 @@
     {
       "id": 5,
       "name": "Americano",
-      "category": "coffee",
+      "category": ["coffee"],
       "brand": "American_coffee",
       "rating": [],
       "variant": "original",
       "description": "Americano is made by pouring hot water over one or two espresso shots, resulting in a drink of similar volume and strength to regular coffee.",
       "price": 25000,
       "stock": 12,
+      "note": "",
       "images": [
         "https://images.unsplash.com/photo-1593231269103-6667d6905882?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80",
         "https://images.unsplash.com/photo-1498709112912-9be3173d30be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80",
@@ -110,34 +102,32 @@
     {
       "id": 6,
       "name": "Macchiato",
-      "category": "coffee",
+      "category": ["coffee"],
       "brand": "italian_coffee",
       "rating": [],
       "variant": "milk_and_coffee",
       "description": "A macchiato is primarily made from espresso. However, it offers an alternative to the classic espresso for those who want a robust flavor hit with a touch of creaminess provided by the spot of milk. Most countries have adopted the Italian name, but if you’re looking for a macchiato in Portugal, you may need to order ‘cafe pingado,’ which translates as ‘coffee with a drop’ (the splash of milk).",
       "price": 20000,
       "stock": 10,
+      "note": "",
       "images": [
         "https://images.unsplash.com/photo-1527678357412-ef45dfbd9ecc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
         "https://images.unsplash.com/photo-1608591038246-4981d06b11e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=402&q=80",
         "https://images.unsplash.com/photo-1674642387251-04a5f9320aa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
       ],
-      "imageDes": [
-        "Warm on your soul",
-        "Calm in focus",
-        "Powering mind"
-      ]
+      "imageDes": ["Warm on your soul", "Calm in focus", "Powering mind"]
     },
     {
       "id": 7,
       "name": "Affogato",
-      "category": "dessert_coffee",
+      "category": ["coffee", "dessert"],
       "brand": "italian_coffee",
       "rating": [],
       "variant": "ice_coffee",
       "description": "The affogato is a dessert made with two main ingredients: vanilla ice cream and espresso. Originally invented in Italy, the word “affogato” literally translates as “drowned” in English. This is fitting, as the affogato is no more than a scoop of ice cream “drowned” in espresso. ",
       "price": 25000,
       "stock": 8,
+      "note": "",
       "images": [
         "https://images.unsplash.com/photo-1652146909250-89cbd06f5608?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
         "https://plus.unsplash.com/premium_photo-1671559020732-25898f0c165a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
@@ -152,23 +142,74 @@
     {
       "id": 8,
       "name": "Ristretto",
-      "category": "coffee",
+      "category": ["coffee"],
       "brand": "American_coffee",
       "rating": [],
       "variant": "original",
       "description": "A ristretto is pulled from an espresso machine using the same process. The difference is that it is for a shorter amount of time and with half the water, resulting in a very concentrated shot of espresso. The variation in water and extraction time creates three differences between ristretto and regular espresso: quantity, taste, and caffeine level.",
       "price": 20000,
       "stock": 12,
+      "note": "",
       "images": [
         "https://images.unsplash.com/photo-1507546602-311207b97bfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80",
         "https://images.unsplash.com/photo-1648524168748-0ff4ac3c79a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
         "https://images.unsplash.com/photo-1525109761343-dce55b0b1d55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
       ],
-      "imageDes": [
-        "prememori dasdsa",
-        "prememori dasda",
-        "dsadsas das"
-      ]
+      "imageDes": ["prememori dasdsa", "prememori dasda", "dsadsas das"]
+    },
+    {
+      "id": 9,
+      "name": "Jasmine tea",
+      "category": ["non coffee", "tea"],
+      "brand": "indonesian tea",
+      "rating": [],
+      "variant": "original",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo adipisci ducimus aspernatur facilis vero qui saepe? Minus aliquam omnis sapiente. Dicta nostrum assumenda quisquam, illum ab iure vitae eos? sit amet consectetur adipisicing elit. Nihil nemo adipisci ducimus aspernatur facilis vero qui saepe? Minus aliquam omnis sapiente. Dicta nostrum assumenda quisquam,",
+      "price": 5000,
+      "stock": 12,
+      "note": "",
+      "images": [
+        "https://i.pinimg.com/564x/a0/d2/ae/a0d2ae75da36e469b94288666149247d.jpg",
+        "https://i.pinimg.com/564x/19/64/f7/1964f77e79ffcc74419f1e1e917e4f0d.jpg",
+        "https://i.pinimg.com/564x/b7/5d/7b/b75d7bc3d1922aa5e9e9387a6deb943e.jpg"
+      ],
+      "imageDes": ["prememori dasdsa", "prememori dasda", "dsadsas das"]
+    },
+    {
+      "id": 10,
+      "name": "Lemon tea",
+      "category": ["non coffee", "tea"],
+      "brand": "indonesian tea",
+      "rating": [],
+      "variant": "original",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo adipisci ducimus aspernatur facilis vero qui saepe? Minus aliquam omnis sapiente. Dicta nostrum assumenda quisquam, illum ab iure vitae eos? sit amet consectetur adipisicing elit. Nihil nemo adipisci ducimus aspernatur facilis vero qui saepe? Minus aliquam omnis sapiente. Dicta nostrum assumenda quisquam,",
+      "price": 5000,
+      "stock": 12,
+      "note": "",
+      "images": [
+        "https://i.pinimg.com/564x/a0/d2/ae/a0d2ae75da36e469b94288666149247d.jpg",
+        "https://i.pinimg.com/564x/19/64/f7/1964f77e79ffcc74419f1e1e917e4f0d.jpg",
+        "https://i.pinimg.com/564x/b7/5d/7b/b75d7bc3d1922aa5e9e9387a6deb943e.jpg"
+      ],
+      "imageDes": ["prememori dasdsa", "prememori dasda", "dsadsas das"]
+    },
+    {
+      "id": 10,
+      "name": "Thai tea",
+      "category": ["non coffee", "tea"],
+      "brand": "thai tea",
+      "rating": [],
+      "variant": "original",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo adipisci ducimus aspernatur facilis vero qui saepe? Minus aliquam omnis sapiente. Dicta nostrum assumenda quisquam, illum ab iure vitae eos? sit amet consectetur adipisicing elit. Nihil nemo adipisci ducimus aspernatur facilis vero qui saepe? Minus aliquam omnis sapiente. Dicta nostrum assumenda quisquam,",
+      "price": 15000,
+      "stock": 12,
+      "note": "",
+      "images": [
+        "https://i.pinimg.com/564x/e3/0d/bf/e30dbf728dd9de8be694682c425e1990.jpg",
+        "https://i.pinimg.com/564x/ed/cf/c4/edcfc4d6d795b9a3b6234f4def13ea2b.jpg",
+        "https://i.pinimg.com/564x/70/64/2d/70642d2041e1a255b94d2f1f9348b14d.jpg"
+      ],
+      "imageDes": ["prememori dasdsa", "Hot thai tea", "dsadsas das"]
     }
   ],
   "slider": [

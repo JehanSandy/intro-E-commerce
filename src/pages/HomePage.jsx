@@ -79,7 +79,7 @@ class HomePage extends React.Component {
   };
   render() {
     // console.log(this.state.carousel);
-    // console.log(this.state.product);
+    console.log(this.state.product);
     return (
       <div>
         <div className="hero">
