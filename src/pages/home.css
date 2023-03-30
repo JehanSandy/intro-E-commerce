@@ -114,44 +114,47 @@ body {
 .Conten_i {
   max-width: 38rem;
   max-height: 50rem;
+  margin-left: 2rem;
 }
 
 /* cart */
-.arrowproduct {
-  display: flex;
-  margin-left: 4rem;
-  margin-bottom: 1rem;
-  width: 15rem;
-  align-items: center;
-  justify-content: space-between;
-}
-.arrowproduct p {
-  text-align: center;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  padding: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-}
 .Cart {
+  /* display: flex; */
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  /* flex-wrap: wrap;
+  justify-content: space-around; */
+}
+.Accor {
+  background-color: #010101;
+}
+.Ingrup {
   display: flex;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  max-width: 84vw;
+  justify-content: end;
+}
+.isi {
+  width: 19rem;
+}
+
+.Acart {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 1rem;
 }
 
 .comcart {
   margin-bottom: 2rem;
   padding: 0.1rem;
+  max-height: 24.5rem;
+  margin-right: 0.7rem;
+  width: 16rem;
   /* display: flex;
   flex-wrap: wrap; */
 }
-.Cimage {
-  height: 18rem;
-  /* width: 17.5rem; */
-  /* image-potition: cover; */
-  /* image-orientation: flip; */
+.woyimage {
+  height: 16rem;
 }
 .Ctitle {
   overflow: hidden;
@@ -162,9 +165,9 @@ body {
 .Ctext {
   color: var(--bg);
 }
-.conBtn {
+.woy {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .btns {
   width: auto;
@@ -182,4 +185,87 @@ body {
   border: none;
   border-radius: 0.2rem;
   color: #070707;
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .hero {
+    min-height: 85vh;
+  }
+  .ContAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b68a5d;
+  }
+  .Conten_i {
+    margin-top: 2rem;
+  }
+
+  .woyimage {
+    height: 15rem;
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 50%;
+  }
+  .hero {
+    min-height: 80vh;
+  }
+  .about {
+    align-items: center;
+  }
+  .ContAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b68a5d;
+  }
+  .woyimage {
+    height: 15rem;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 55%;
+  }
+  .hero {
+    min-height: 80vh;
+  }
+  .about {
+    align-items: center;
+  }
+  .ContAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b68a5d;
+  }
+  .Cart {
+    /* display: flex; */
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    /* flex-wrap: wrap;
+    justify-content: space-around; */
+  }
+  .comcart {
+    margin-bottom: 2rem;
+    padding: 0.1rem;
+    max-height: 24.5rem;
+    margin-right: 0.7rem;
+    width: 14rem;
+  }
+  .woyimage {
+    height: 14rem;
+  }
 }

@@ -41,7 +41,7 @@ body {
 .container {
   /* background-color: aqua; */
   /* display: flex; */
-  width: 65rem;
+  max-width: 65rem;
   /* height: 15rem; */
   /* justify-content: space-around; */
 }
@@ -49,12 +49,22 @@ body {
   text-align: center;
 }
 .tableimg {
-  width: 5rem;
-  height: 5.5rem;
+  max-width: 5rem;
+  max-height: 5.5rem;
 }
 
 .texErr {
   margin-top: 1vh;
   color: red;
   font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 320px) {
+  .maincontainer {
+    background-color: #b68a5d;
+    margin-top: 11vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding: none;
+  }
 }

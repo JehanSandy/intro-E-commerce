@@ -1,7 +1,15 @@
 import React from "react";
-import { Navbar, Nav, Dropdown, Button, Badge } from "react-bootstrap";
+import {
+  Navbar,
+  Nav,
+  Dropdown,
+  Button,
+  Badge,
+  Offcanvas,
+} from "react-bootstrap";
 import Icon from "@mdi/react";
-import { mdiCartOutline } from "@mdi/js";
+import { mdiCartOutline, mdiMenu } from "@mdi/js";
+import "./navibar.css";
 
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
@@ -11,16 +19,11 @@ class NaviBar extends React.Component {
   render() {
     console.log(this.props.role);
     return (
-      <Navbar
-        fixed="top"
-        className="px-5 py-0 mx-auto"
-        style={styles.navibar}
-        expand="lg"
-      >
+      <Navbar fixed="top" className="navibar px-5 py-0 mx-auto" expand="lg">
         <Navbar.Brand href="#home" style={styles.navfont}>
-          <h1>
+          <h2>
             Buku<span style={styles.spandfont}>_coffee</span>
-          </h1>
+          </h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -99,9 +102,6 @@ const styles = {
     color: "rgba(182, 137, 91)",
     marginTop: "0",
     marginBottom: "0",
-  },
-  image: {
-    height: "40px",
   },
 };
 

@@ -64,6 +64,7 @@ class DetailPage extends React.Component {
     Axios.get(`${url}products/${document.location.search.substring(1)}`).then(
       (res) => {
         this.setState({ products: res.data });
+        console.log(this.state.products.image);
       }
     );
   }

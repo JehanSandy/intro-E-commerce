@@ -23,6 +23,7 @@ class HistoriAdmin extends React.Component {
     if (!this.props.username) {
       return <Navigate to="/login" />;
     }
+    console.log(this.props.username);
     return (
       <div className="maincontainer">
         <div className="headCart py-0">

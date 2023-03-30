@@ -1,0 +1,71 @@
+/* login */
+.cont {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conForm {
+  margin-top: 10vh;
+  width: 30vw;
+  height: 66vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 4vh;
+  border-radius: 2vh;
+}
+.conBtn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.font {
+  font-size: 1.2rem;
+  margin-top: 1.5vh;
+}
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+/* regis */
+.contFormReg {
+  margin-top: 7vh;
+  width: 30vw;
+  height: 82vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 4vh;
+  border-radius: 2vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.TextErr {
+  margin-top: 1vh;
+  color: rgb(147, 17, 17);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .conForm,
+  .contFormReg {
+    width: 60vw;
+    height: 50vh;
+  }
+}
+@media (max-width: 460px) {
+  .conForm,
+  .contFormReg {
+    width: 62vw;
+    height: 50vh;
+  }
+}
+@media (max-width: 320px) {
+  .conForm,
+  .contFormReg {
+    width: 60vw;
+    height: 50vh;
+  }
+}

@@ -1,7 +1,14 @@
 import React from "react";
 import Axios from "axios";
 import { Link } from "react-router-dom";
-import { Carousel, Card, Button } from "react-bootstrap";
+import {
+  Carousel,
+  Card,
+  Button,
+  Accordion,
+  Form,
+  InputGroup,
+} from "react-bootstrap";
 import "./home.css";
 import Icon from "@mdi/react";
 import {
@@ -9,6 +16,7 @@ import {
   mdiCartArrowDown,
   mdiArrowLeftBoldBoxOutline,
   mdiArrowRightBoldBoxOutline,
+  mdiMagnify,
 } from "@mdi/js";
 
 class HomePage extends React.Component {
@@ -20,6 +28,12 @@ class HomePage extends React.Component {
       page: 1,
       prodPerPage: 4,
       maxPage: 0,
+      Coffees: [],
+      kateCoffee: [],
+      NonCoffees: [],
+      kateNonCoffee: [],
+      Foods: [],
+      kateFood: [],
     };
   }
 
@@ -29,29 +43,75 @@ class HomePage extends React.Component {
       Axios.get("http://localhost:2000/products").then((res) => {
         this.setState({
           product: res.data,
-          maxPage: res.data.length / this.state.prodPerPage,
+          Coffees: res.data.filter((item) => {
+            return item.category.includes("coffee");
+          }),
+          kateCoffee: res.data.filter((item) => {
+            return item.category.includes("coffee");
+          }),
+          NonCoffees: res.data.filter((item) => {
+            return item.category.includes("non coffee");
+          }),
+          kateNonCoffee: res.data.filter((item) => {
+            return item.category.includes("non coffee");
+          }),
+          Foods: res.data.filter((item) => {
+            return item.category.includes("food");
+          }),
+          kateFood: res.data.filter((item) => {
+            return item.category.includes("food");
+          }),
         });
       });
     });
   }
-  onNexPage = () => {
-    this.setState({ page: this.state.page + 1 });
-  };
-  onPrevPage = () => {
-    this.setState({ page: this.state.page - 1 });
-  };
+  FilterCoffee = () => {
+    let coffee = this.refs.coffee.value;
 
-  showPorduct = () => {
-    let beginningIndex = this.state.Page - 1 * this.state.prodPerPage;
-    let curentProduct = this.state.product.slice(
-      beginningIndex,
-      beginningIndex + this.state.prodPerPage
-    );
-    console.log(curentProduct);
-    return this.state.product.map((item, index) => {
+    if (coffee) {
+      return this.setState({
+        kateCoffee: this.state.Coffees.filter((item) => {
+          return item.name.toLowerCase().includes(coffee.toLowerCase());
+        }),
+      });
+    } else if (!coffee) {
+      return this.setState({
+        kateCoffee: this.state.product.filter((item) => {
+          return item.category.includes("coffee");
+        }),
+      });
+    }
+  };
+  FilterNonCoffee = () => {
+    let nonCoffee = this.refs.nonCoffee.value;
+    if (nonCoffee) {
+      return this.setState({
+        kateNonCoffee: this.state.NonCoffees.filter((item) => {
+          return item.name.toLowerCase().includes(nonCoffee.toLowerCase());
+        }),
+      });
+    } else if (!nonCoffee) {
+      return this.setState({ kateNonCoffee: this.state.NonCoffees });
+    }
+  };
+  filterFood = () => {
+    let food = this.refs.food.value;
+    if (food) {
+      return this.setState({
+        kateFood: this.state.Foods.filter((item) => {
+          return item.name.toLowerCase().includes(food.toLowerCase());
+        }),
+      });
+    } else if (!food) {
+      return this.setState({ kateFood: this.state.Foods });
+    }
+  };
+  showPorduct = (data) => {
+    // console.log(curentProduct);
+    return data.map((item, index) => {
       return (
-        <Card style={{ width: "18rem" }} className="comcart" key={index}>
-          <Card.Img variant="top" src={item.images[0]} className="Cimage" />
+        <Card className="comcart" key={index}>
+          <Card.Img variant="top" src={item.images[0]} className="woyimage" />
           <Card.Body>
             <Card.Title className="Ctitle">{item.name}</Card.Title>
             <div>
@@ -59,7 +119,7 @@ class HomePage extends React.Component {
                 {" "}
                 <b>IDR {item.price.toLocaleString()}</b>
               </Card.Text>
-              <div className="conBtn">
+              <div className="woy">
                 <Button className="btns">
                   <Icon path={mdiBookmarkMultipleOutline} size={1} />
                 </Button>
@@ -78,8 +138,9 @@ class HomePage extends React.Component {
     });
   };
   render() {
-    // console.log(this.state.carousel);
-    console.log(this.state.product);
+    console.log(this.state.kateCoffee);
+    // console.log(this.state.kateNonCoffee);
+    // console.log(this.state.kateFood);
     return (
       <div>
         <div className="hero">
@@ -150,26 +211,84 @@ class HomePage extends React.Component {
           <h1>
             Our <span>Product</span>
           </h1>
-          <div className="arrowproduct">
-            <Button
-              variant="dark"
-              onClick={this.onPrevPage}
-              disabled={this.state.page == 1}
-            >
-              <Icon path={mdiArrowLeftBoldBoxOutline} size={1} />
-            </Button>
-            <p>
-              Page {this.state.page} of {this.state.maxPage}
-            </p>
-            <Button
-              variant="dark"
-              onClick={this.onNexPage}
-              disabled={this.state.page >= this.state.maxPage}
-            >
-              <Icon path={mdiArrowRightBoldBoxOutline} size={1} />
-            </Button>
+          <div className="Cart">
+            <Accordion defaultActiveKey={["0"]} alwaysOpen>
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>
+                  <h3>Our Coffee menu</h3>
+                </Accordion.Header>
+                <Accordion.Body className="Accor">
+                  <div className="Ingrup">
+                    <InputGroup className="isi">
+                      <Form.Control
+                        placeholder="Search your coffee"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
+                        ref="coffee"
+                        onChange={this.FilterCoffee}
+                      />
+                      <InputGroup.Text id="basic-addon1">
+                        <Icon path={mdiMagnify} size={1} />
+                      </InputGroup.Text>
+                    </InputGroup>
+                  </div>
+                  <div className="Acart">
+                    {this.showPorduct(this.state.kateCoffee)}
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+
+              <Accordion.Item eventKey="1">
+                <Accordion.Header>
+                  <h3>Non Coffee menu</h3>
+                </Accordion.Header>
+                <Accordion.Body className="Accor">
+                  <div className="Ingrup">
+                    <InputGroup className="isi" style={{ width: "19rem" }}>
+                      <Form.Control
+                        placeholder="Search your drink or dessert"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
+                        ref="nonCoffee"
+                        onChange={this.FilterNonCoffee}
+                      />
+                      <InputGroup.Text id="basic-addon1">
+                        <Icon path={mdiMagnify} size={1} />
+                      </InputGroup.Text>
+                    </InputGroup>
+                  </div>
+                  <div className="Acart">
+                    {this.showPorduct(this.state.kateNonCoffee)}
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+
+              <Accordion.Item eventKey="2">
+                <Accordion.Header>
+                  <h3>Our Food menu</h3>
+                </Accordion.Header>
+                <Accordion.Body className="Accor">
+                  <div className="Ingrup">
+                    <InputGroup className="isi">
+                      <Form.Control
+                        placeholder="Search your food or snack"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
+                        ref="food"
+                        onChange={this.filterFood}
+                      />
+                      <InputGroup.Text id="basic-addon1">
+                        <Icon path={mdiMagnify} size={1} />
+                      </InputGroup.Text>
+                    </InputGroup>
+                  </div>
+                  <div className="Acart">
+                    {this.showPorduct(this.state.kateFood)}
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
           </div>
-          <div className="Cart">{this.showPorduct()}</div>
         </div>
       </div>
     );

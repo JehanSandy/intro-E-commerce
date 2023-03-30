@@ -224,7 +224,7 @@ class CartPage extends React.Component {
           <h1>
             Your <span>cart</span>
           </h1>
-          <Button variant="dark" className="py-0" onClick={this.onCheckOut}>
+          <Button variant="dark" className="py-1" onClick={this.onCheckOut}>
             {" "}
             Checkout
           </Button>
