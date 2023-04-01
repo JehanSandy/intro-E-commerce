@@ -9,7 +9,6 @@
 }
 .leftfoot {
   flex-basis: 33%;
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
 }

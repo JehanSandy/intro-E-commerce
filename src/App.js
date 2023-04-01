@@ -12,6 +12,7 @@ import History from "./pages/history";
 import HistoriAdmin from "./pages/historyAdmin";
 import NotFound from "./pages/404notFound";
 import Footers from "./pages/footers";
+import Tes from "./component/test";
 
 import { keepLogin } from "./redux/action";
 import { connect } from "react-redux";
@@ -79,6 +80,9 @@ class App extends React.Component {
         </Routes>
         <div>
           <Footers />
+        </div>
+        <div>
+          <Tes />
         </div>
       </div>
     );
