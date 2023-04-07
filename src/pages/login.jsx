@@ -88,7 +88,7 @@ class LoginPage extends React.Component {
               <b>
                 Don't have an account?{" "}
                 <Link to="/register" className="link" variant="dark">
-                  Sign In
+                  Sign Up
                 </Link>
               </b>
             </h3>

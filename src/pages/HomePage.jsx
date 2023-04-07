@@ -19,6 +19,9 @@ import {
   mdiMagnify,
 } from "@mdi/js";
 
+// let url = "https://rich-garb-yak.cyclic.app/";
+const url = "http://localhost:2000/";
+
 class HomePage extends React.Component {
   constructor(props) {
     super(props);
@@ -38,9 +41,9 @@ class HomePage extends React.Component {
   }
 
   componentDidMount() {
-    Axios.get("http://localhost:2000/slider").then((res) => {
+    Axios.get(`${url}slider`).then((res) => {
       this.setState({ carousel: res.data });
-      Axios.get("http://localhost:2000/products").then((res) => {
+      Axios.get(`${url}products`).then((res) => {
         this.setState({
           product: res.data,
           Coffees: res.data.filter((item) => {

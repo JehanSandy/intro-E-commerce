@@ -28,8 +28,8 @@ class CartPage extends React.Component {
           <th>No</th>
           <th>Image</th>
           <th>Name Product</th>
-          <th>Price</th>
           <th>Quantity</th>
+          <th>Price</th>
           <th>Total price</th>
           <th>Actions</th>
         </tr>
@@ -70,7 +70,7 @@ class CartPage extends React.Component {
                     <Button
                       ref="minus"
                       onClick={() => this.onMinus()}
-                      disabled={this.state.qty === 1}
+                      disabled={this.state.qty <= 1}
                     >
                       -
                     </Button>
@@ -151,7 +151,7 @@ class CartPage extends React.Component {
   };
   onSave = (index, stockProd) => {
     let qty = this.refs.quantity.value;
-    if (qty === 0) {
+    if (qty <= 0) {
       this.setState({
         qtyP2: [
           true,

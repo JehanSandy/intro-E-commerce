@@ -5,6 +5,7 @@ import { Button, Form, Carousel, Modal } from "react-bootstrap";
 import { connect } from "react-redux";
 import { addCart } from "../redux/action";
 import { Navigate } from "react-router-dom";
+// const url = "https://rich-garb-yak.cyclic.app/";
 const url = "http://localhost:2000/";
 
 class DetailPage extends React.Component {
@@ -61,6 +62,7 @@ class DetailPage extends React.Component {
   };
 
   componentDidMount() {
+    console.log(document.location.search.substring(1));
     Axios.get(`${url}products/${document.location.search.substring(1)}`).then(
       (res) => {
         this.setState({ products: res.data });

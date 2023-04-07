@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 class Footers extends React.Component {
   render() {
     return (
-      <div className="mainFooter">
+      <div className="mainFooter" id="footers">
         <div className="leftfoot">
           <div className="sosmed">
             <div className="logo">

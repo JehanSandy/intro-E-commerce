@@ -31,10 +31,10 @@ class NaviBar extends React.Component {
             <Nav.Link as={Link} to="/" style={styles.navfont}>
               Home
             </Nav.Link>
-            <Nav.Link href="#link" style={styles.navfont}>
+            <Nav.Link as={Link} to="/#product" style={styles.navfont}>
               Product
             </Nav.Link>
-            <Nav.Link href="#link" style={styles.navfont}>
+            <Nav.Link href="#footers" style={styles.navfont}>
               Contact Us
             </Nav.Link>
           </Nav>
@@ -73,7 +73,7 @@ class NaviBar extends React.Component {
                     Login
                   </Dropdown.Item>
                   <Dropdown.Item as={Link} to="/register">
-                    Sign In
+                    Sign Up
                   </Dropdown.Item>
                 </>
               )}

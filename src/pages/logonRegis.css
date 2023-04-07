@@ -1,15 +1,18 @@
 /* login */
 .cont {
-  height: 100vh;
+  height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(https://images.unsplash.com/photo-1521917441209-e886f0404a7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .conForm {
   margin-top: 10vh;
   width: 30vw;
   height: 66vh;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(8, 8, 8, 0.7);
   padding: 4vh;
   border-radius: 2vh;
 }
@@ -26,7 +29,7 @@
   margin-top: 1.5vh;
 }
 .link {
-  color: black;
+  color: #b68a5d;
   text-decoration: none;
 }
 

@@ -1,10 +1,12 @@
 import Axios from "axios";
+// let url = "https://rich-garb-yak.cyclic.app/";
 let url = "http://localhost:2000/";
 
 export const addCart = (id, data) => {
   return (dispatch) => {
     Axios.get(`${url}users/${id}`).then((res) => {
       let temCart = res.data.cart;
+      console.log(temCart);
       temCart.push(data);
       Axios.patch(`${url}users/${id}`, { cart: temCart }).then((res) => {
         Axios.get(`${url}users/${id}`).then((res) => {

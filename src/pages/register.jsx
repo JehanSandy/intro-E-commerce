@@ -127,7 +127,7 @@ class Register extends React.Component {
     return (
       <div className="cont">
         <div className="contFormReg">
-          <h1>Sign In</h1>
+          <h1>Sign Up</h1>
 
           {/* Form for Username */}
           <Form.Label htmlFor="basic-url" className="mb-0">

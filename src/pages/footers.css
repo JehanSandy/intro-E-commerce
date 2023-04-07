@@ -6,6 +6,8 @@
   display: flex;
   padding-left: 3rem;
   padding-right: 3rem;
+  position: end;
+  bottom: 0;
 }
 .leftfoot {
   flex-basis: 33%;

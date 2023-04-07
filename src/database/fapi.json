@@ -870,15 +870,64 @@
       "role": "user",
       "cart": [
         {
+          "id": 3,
+          "name": "Latte Coffee",
+          "image": "https://images.unsplash.com/photo-1593443320739-77f74939d0da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
+          "price": 20000,
+          "stock": 9,
+          "qty": 3
+        }
+      ],
+      "id": 5
+    },
+    {
+      "username": "hallojs",
+      "email": "hallojs@gmail.com",
+      "password": "hallo123!",
+      "role": "user",
+      "cart": [
+        {
           "id": 2,
           "name": "Espresso",
           "image": "https://images.unsplash.com/photo-1612509590595-785e974ed690?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXNwcmVzc28lMjBjb2ZmZWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
           "price": 20000,
           "stock": 10,
-          "qty": 6
+          "qty": 1
         }
       ],
-      "id": 5
+      "id": 6
+    },
+    {
+      "username": "adhan01",
+      "email": "adhan@gmail.com",
+      "password": "adhan123!",
+      "role": "user",
+      "cart": [],
+      "id": 7
+    },
+    {
+      "username": "adhan123",
+      "email": "adhan1@gmail.com",
+      "password": "adhan123!",
+      "role": "user",
+      "cart": [],
+      "id": 8
+    },
+    {
+      "username": "alex12",
+      "email": "alex@gmail.com",
+      "password": "alex123!",
+      "role": "user",
+      "cart": [],
+      "id": 9
+    },
+    {
+      "username": "ajax123",
+      "email": "ajax@gmail.com",
+      "password": "ajax123!",
+      "role": "user",
+      "cart": [],
+      "id": 10
     }
   ],
   "history": [
@@ -1057,6 +1106,110 @@
         }
       ],
       "id": 9
+    },
+    {
+      "idUser": 5,
+      "username": "jehans",
+      "time": "4/1/2023, 2:11:44 PM",
+      "product": [
+        {
+          "id": 2,
+          "name": "Espresso",
+          "image": "https://images.unsplash.com/photo-1612509590595-785e974ed690?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXNwcmVzc28lMjBjb2ZmZWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+          "price": 20000,
+          "stock": 10,
+          "qty": 6
+        },
+        {
+          "id": 24,
+          "name": "Mushroom crispy",
+          "image": "https://i.pinimg.com/564x/3a/d0/de/3ad0dee6ac96eb7739a8f8e1f3d62ee4.jpg",
+          "price": 8000,
+          "stock": 12,
+          "qty": 2
+        }
+      ],
+      "id": 10
+    },
+    {
+      "idUser": 6,
+      "username": "hallojs",
+      "time": "4/1/2023, 2:13:26 PM",
+      "product": [
+        {
+          "id": 2,
+          "name": "Espresso",
+          "image": "https://images.unsplash.com/photo-1612509590595-785e974ed690?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXNwcmVzc28lMjBjb2ZmZWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+          "price": 20000,
+          "stock": 10,
+          "qty": 2
+        }
+      ],
+      "id": 11
+    },
+    {
+      "idUser": 6,
+      "username": "hallojs",
+      "time": "4/1/2023, 2:23:48 PM",
+      "product": [
+        {
+          "id": 5,
+          "name": "Americano",
+          "image": "https://images.unsplash.com/photo-1593231269103-6667d6905882?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80",
+          "price": 25000,
+          "stock": 12,
+          "qty": 3
+        }
+      ],
+      "id": 12
+    },
+    {
+      "idUser": 8,
+      "username": "adhan123",
+      "time": "4/1/2023, 10:56:32 PM",
+      "product": [
+        {
+          "id": 2,
+          "name": "Espresso",
+          "image": "https://images.unsplash.com/photo-1612509590595-785e974ed690?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXNwcmVzc28lMjBjb2ZmZWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+          "price": 20000,
+          "stock": 10,
+          "qty": 2
+        }
+      ],
+      "id": 13
+    },
+    {
+      "idUser": 9,
+      "username": "alex12",
+      "time": "4/1/2023, 11:20:35 PM",
+      "product": [
+        {
+          "id": 12,
+          "name": "Milk shake strawberry",
+          "image": "https://i.pinimg.com/564x/4a/35/c7/4a35c7e42ba3513a2191466b0bf40ccd.jpg",
+          "price": 12000,
+          "stock": 12,
+          "qty": 2
+        }
+      ],
+      "id": 14
+    },
+    {
+      "idUser": 10,
+      "username": "ajax123",
+      "time": "4/1/2023, 11:39:24 PM",
+      "product": [
+        {
+          "id": 12,
+          "name": "Milk shake strawberry",
+          "image": "https://i.pinimg.com/564x/4a/35/c7/4a35c7e42ba3513a2191466b0bf40ccd.jpg",
+          "price": 12000,
+          "stock": 12,
+          "qty": 1
+        }
+      ],
+      "id": 15
     }
   ]
 }
