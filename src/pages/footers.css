@@ -1,0 +1,145 @@
+.mainFooter {
+  background-color: black;
+  /* border: 1px solid white; */
+  max-height: 60vh;
+  margin-top: 5rem;
+  display: flex;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  position: end;
+  bottom: 0;
+}
+.leftfoot {
+  flex-basis: 33%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+}
+.sosmed {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 20rem;
+  padding: auto;
+  justify-content: center;
+  align-items: center;
+}
+.sosmed div h1 {
+  font-size: 4rem;
+  margin-bottom: none;
+}
+.sosmed div h1 span {
+  color: rgba(182, 137, 91);
+  margin-top: none;
+}
+.sosmeditem {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.sosmeditem h2 {
+  font-size: 1.5rem;
+}
+.Link {
+  color: black;
+  display: inline;
+  margin-right: 1rem;
+}
+
+.middlefoot {
+  flex-basis: 34%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.img_maps {
+  max-width: 8rem;
+  max-height: 8rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+}
+.links {
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 0.8rem;
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.rightfoot {
+  flex-basis: 33%;
+}
+.names {
+  display: flex;
+  justify-content: space-around;
+}
+.email {
+  display: flex;
+  justify-content: space-around;
+}
+.sendbutton {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .middlefoot {
+    flex-basis: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+@media (max-width: 460px) {
+  .mainFooter {
+    background-color: black;
+    max-height: 60vh;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .middlefoot,
+  .rightfoot {
+    padding-top: 2rem;
+  }
+  .sosmeditem h2 {
+    font-size: 2rem;
+  }
+  .Link {
+    color: black;
+    display: inline;
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 320px) {
+  .mainFooter {
+    background-color: black;
+    max-height: 60vh;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .middlefoot,
+  .rightfoot {
+    padding-top: 2rem;
+  }
+}

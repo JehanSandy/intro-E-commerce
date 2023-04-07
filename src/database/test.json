@@ -1,0 +1,303 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Espresso",
+      "category": ["coffee"]
+    },
+    {
+      "id": 3,
+      "name": "Latte Coffee",
+      "category": ["coffee"]
+    },
+    {
+      "id": 9,
+      "name": "Jasmine tea",
+      "category": ["non coffee", "tea"]
+    },
+    {
+      "id": 14,
+      "name": "Milk shake tiramisu",
+      "category": ["non coffee", "milk"]
+    },
+    {
+      "id": 15,
+      "name": "Chocolate drink",
+      "category": ["non coffee", "milk", "chocolate"]
+    },
+    {
+      "id": 16,
+      "name": "Strowberry gelato",
+      "category": ["non coffee", "desserts"]
+    },
+    {
+      "id": 17,
+      "name": "Vanilla gelato",
+      "category": ["non coffee", "desserts"]
+    },
+    {
+      "id": 21,
+      "name": "Ring onion",
+      "category": ["food", "snack"]
+    },
+    {
+      "id": 22,
+      "name": "French fries",
+      "category": ["food", "snack"]
+    },
+    {
+      "id": 29,
+      "name": "Ghost noodle",
+      "category": ["food", "meal"]
+    },
+    {
+      "id": 30,
+      "name": "Indomie",
+      "category": ["food", "meal"]
+    }
+  ],
+  "slider": [
+    {
+      "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "title": "Cozy Place",
+      "description": "We have cozy place to make you comfortable to read while drinking coffee"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+      "title": "The best quality coffee only",
+      "description": "We serve only the best coffee for you, to make sure your day be come productive"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1495214783159-3503fd1b572d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "title": "Good food for good mood",
+      "description": "We got a lot of dessert and food to maintain your mood"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1658314756249-8cecdff26d29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "title": "Best service for the great experience",
+      "description": "we provide the best service for your coffee drinking experience"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1521012012373-6a85bade18da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+      "title": "Non Coffee menu",
+      "description": "Don't worries if you not coffee lovers we have non coffee menu for you"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1517028267-bcc3eba7474c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+      "title": "Quite Space",
+      "description": "You need a space? don't worries we have a quite space, so you can more comfortable and concentrated"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "email": "admin@gmail.com",
+      "role": "admin",
+      "cart": []
+    },
+    {
+      "id": 2,
+      "username": "frengky",
+      "password": "frengky123",
+      "email": "frengky@gmail.com",
+      "role": "user",
+      "cart": []
+    },
+    {
+      "username": "yoona01",
+      "email": "yoona01@gmail.com",
+      "password": "yoona1!",
+      "role": "user",
+      "id": 3,
+      "cart": []
+    },
+    {
+      "username": "jihyo02",
+      "email": "jihyo@gmail.com",
+      "password": "jihyo1!",
+      "role": "user",
+      "id": 4,
+      "cart": []
+    },
+    {
+      "username": "jehans",
+      "email": "jehan@gmail.com",
+      "password": "jehan123!",
+      "role": "user",
+      "cart": [],
+      "id": 5
+    }
+  ],
+  "history": [
+    {
+      "idUser": 5,
+      "username": "jehans",
+      "time": "3/20/2023, 1:01:16 AM",
+      "product": [
+        {
+          "id": 2,
+          "name": "Espresso",
+          "image": "https://images.unsplash.com/photo-1612509590595-785e974ed690?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXNwcmVzc28lMjBjb2ZmZWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+          "price": 20000,
+          "stock": 10,
+          "qty": 4
+        },
+        {
+          "id": 4,
+          "name": "Cappuccino",
+          "image": "https://images.unsplash.com/photo-1523942839745-7848c839b661?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "price": 25000,
+          "stock": 10,
+          "qty": 9
+        }
+      ],
+      "id": 1
+    },
+    {
+      "idUser": 5,
+      "username": "jehans",
+      "time": "3/20/2023, 11:16:40 AM",
+      "product": [
+        {
+          "id": 2,
+          "name": "Espresso",
+          "image": "https://images.unsplash.com/photo-1612509590595-785e974ed690?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXNwcmVzc28lMjBjb2ZmZWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+          "price": 20000,
+          "stock": 10,
+          "qty": 1
+        }
+      ],
+      "id": 2
+    },
+    {
+      "idUser": 5,
+      "username": "jehans",
+      "time": "3/20/2023, 2:57:49 PM",
+      "product": [
+        {
+          "id": 1,
+          "name": "Manual Brew",
+          "image": "https://images.unsplash.com/photo-1657735086159-65032feb5f28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+          "price": 15000,
+          "stock": 13,
+          "qty": 2
+        }
+      ],
+      "id": 3
+    },
+    {
+      "idUser": 5,
+      "username": "jehans",
+      "time": "3/20/2023, 3:03:27 PM",
+      "product": [
+        {
+          "id": 1,
+          "name": "Manual Brew",
+          "image": "https://images.unsplash.com/photo-1657735086159-65032feb5f28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+          "price": 15000,
+          "stock": 13,
+          "qty": 1
+        }
+      ],
+      "id": 4
+    },
+    {
+      "idUser": 5,
+      "username": "jehans",
+      "time": "3/20/2023, 10:41:33 PM",
+      "product": [
+        {
+          "id": 3,
+          "name": "Latte Coffee",
+          "image": "https://images.unsplash.com/photo-1593443320739-77f74939d0da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
+          "price": 20000,
+          "stock": 9,
+          "qty": 3
+        }
+      ],
+      "id": 5
+    },
+    {
+      "idUser": 2,
+      "username": "frengky",
+      "time": "3/20/2023, 10:48:55 PM",
+      "product": [
+        {
+          "id": 2,
+          "name": "Espresso",
+          "image": "https://images.unsplash.com/photo-1612509590595-785e974ed690?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXNwcmVzc28lMjBjb2ZmZWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+          "price": 20000,
+          "stock": 10,
+          "qty": 10
+        },
+        {
+          "id": 4,
+          "name": "Cappuccino",
+          "image": "https://images.unsplash.com/photo-1523942839745-7848c839b661?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "price": 25000,
+          "stock": 10,
+          "qty": 1
+        },
+        {
+          "id": 2,
+          "name": "Espresso",
+          "image": "https://images.unsplash.com/photo-1612509590595-785e974ed690?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXNwcmVzc28lMjBjb2ZmZWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+          "price": 20000,
+          "stock": 10,
+          "qty": 1
+        }
+      ],
+      "id": 6
+    },
+    {
+      "idUser": 3,
+      "username": "yoona01",
+      "time": "3/21/2023, 9:37:35 AM",
+      "product": [
+        {
+          "id": 2,
+          "name": "Espresso",
+          "image": "https://images.unsplash.com/photo-1612509590595-785e974ed690?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXNwcmVzc28lMjBjb2ZmZWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+          "price": 20000,
+          "stock": 10,
+          "qty": 1
+        }
+      ],
+      "id": 7
+    },
+    {
+      "idUser": 5,
+      "username": "jehans",
+      "time": "3/22/2023, 2:27:15 PM",
+      "product": [
+        {
+          "id": 3,
+          "name": "Latte Coffee",
+          "image": "https://images.unsplash.com/photo-1593443320739-77f74939d0da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
+          "price": 20000,
+          "stock": 9,
+          "qty": 1
+        }
+      ],
+      "id": 8
+    }
+  ]
+}
+
+
+
+  
+  // Memfilter data berdasarkan kategori "coffee"
+  const coffeeProducts = products.filter(product => product.category.includes("coffee"));
+  console.log(coffeeProducts);
+  
+  // Memfilter data berdasarkan kategori "non coffee"
+  const nonCoffeeProducts = products.filter(product => product.category.includes("non coffee"));
+  console.log(nonCoffeeProducts);
+  
+  // Memfilter data berdasarkan kategori "meal" atau "food"
+  const mealAndFoodProducts = products.filter(product => product.category.includes("meal") || product.category.includes("food"));
+  console.log(mealAndFoodProducts);
+  

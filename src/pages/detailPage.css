@@ -1,0 +1,255 @@
+:root {
+  --primary: #b68a5d;
+  --bg: #010101;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Popins", sans-serif;
+  background-color: var(--bg);
+  color: #ffffff;
+  /* min-height: 4000px; */
+}
+.mainContainer {
+  display: flex;
+  /* background-color: #b68a5d; */
+  /* height: 60vh; */
+  margin-top: 13vh;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+/* show Products */
+.showProduct {
+  background-color: none;
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+}
+.imgShow {
+  width: 23vw;
+  height: 25vw;
+}
+.CarCap h3 {
+  font-size: 1.5rem;
+}
+
+/* Show Description */
+.showDescription {
+  background-color: none;
+  flex-basis: 40%;
+  border-radius: 1rem;
+  border: 0.1rem solid #ffff;
+  padding: 1rem;
+}
+
+/* Show CekOut */
+.showCekOut {
+  /* background-color: #ffffff; */
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+}
+.CartCekOut {
+  border-radius: 1rem;
+  border: 0.1rem solid #ffff;
+  width: 25vw;
+  padding: 1rem;
+}
+
+.titleCekOut {
+  background-color: #b68a5d;
+  border-radius: 0.5rem;
+  padding: 0.1rem;
+  text-align: center;
+}
+
+.titleCekOut h2 {
+  font-size: 1.5rem;
+}
+
+.subtitleCekOut h2 {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.mainQty {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: #de2a2a; */
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.qtyButton {
+  display: flex;
+  justify-content: space-around;
+  width: 9rem;
+}
+.qtyButton Button {
+  background-color: #b68a5d;
+  border: none;
+  transition: 0.25s;
+}
+
+.qtyButton Button:hover {
+  background-color: #1f1e1c;
+}
+
+.form {
+  width: 4rem;
+  background-color: #ffffff;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+}
+
+.total {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.total p {
+  margin-bottom: 0;
+}
+
+.Note {
+  background-color: #b68a5d;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.Note p {
+  margin-bottom: 0;
+}
+.formNote {
+  margin-top: none;
+}
+.buyButton {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.buyButton Button {
+  background-color: #b68a5d;
+  border: none;
+  transition: 0.25s;
+}
+
+.buyButton Button:hover {
+  background-color: #1f1e1c;
+}
+.dalmod {
+  background-color: rgba(0, 0, 0, 60%);
+  color: black;
+}
+
+.ButtonMod {
+  background-color: #b68a5d;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .mainContainer,
+  .CartCekOut,
+  .showDescription,
+  .titleCekOut h2,
+  .subtitleCekOut {
+    font-size: 125%;
+  }
+  .subtitleCekOut h2,
+  .mainQty,
+  .qtyButton Button,
+  .form,
+  .buyButton Button {
+    font-size: 100%;
+  }
+  .qtyButton {
+    width: 12rem;
+  }
+  .mainContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .CartCekOut {
+    width: 85vw;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .showDescription {
+    width: 85vw;
+  }
+  .imgShow {
+    width: 82vw;
+    height: 55vw;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media (max-width: 460px) {
+  .mainContainer,
+  .CartCekOut,
+  .showDescription,
+  .titleCekOut h2,
+  .subtitleCekOut {
+    font-size: 125%;
+  }
+  .subtitleCekOut h2,
+  .mainQty,
+  .qtyButton Button,
+  .form,
+  .buyButton Button {
+    font-size: 80%;
+  }
+
+  .mainContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .CartCekOut {
+    width: 65vw;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .showDescription {
+    width: 65vw;
+  }
+  .imgShow {
+    width: 65vw;
+    height: 35vw;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .mainContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 110%;
+  }
+  .CartCekOut {
+    width: 70vw;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .showDescription {
+    width: 70vw;
+  }
+  .imgShow {
+    width: 65vw;
+    height: 35vw;
+    object-fit: cover;
+    object-position: center;
+  }
+}

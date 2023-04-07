@@ -2,6 +2,7 @@ import React from "react";
 import { InputGroup, Form, Button, Modal } from "react-bootstrap";
 import Icon from "@mdi/react";
 import { mdiAccountCircle, mdiEyeOutline, mdiEyeOff } from "@mdi/js";
+import "./logonRegis.css";
 
 import { Link, Navigate } from "react-router-dom";
 import { connect } from "react-redux";
@@ -45,8 +46,8 @@ class LoginPage extends React.Component {
       return <Navigate to="/" />;
     }
     return (
-      <div style={styles.cont}>
-        <div style={styles.contForm}>
+      <div className="cont">
+        <div className="conForm">
           <h1>Hallo</h1>
           <h3 className="mb-4">Welcome Back!</h3>
 
@@ -79,54 +80,60 @@ class LoginPage extends React.Component {
             />
           </InputGroup>
 
-          <div style={styles.contBtn}>
-            <Button onClick={this.onLogin} variant="primary" style={styles.btn}>
+          <div className="conBtn">
+            <Button onClick={this.onLogin} variant="dark" className="ButtonMod">
               Login
             </Button>
-            <h3 style={styles.font}>
+            <h3 className="font">
               <b>
-                Don't have an account? <Link to="/register">Sign In</Link>
+                Don't have an account?{" "}
+                <Link to="/register" className="link" variant="dark">
+                  Sign Up
+                </Link>
               </b>
             </h3>
           </div>
         </div>
-        <Modal show={this.state.error1}>
+        <Modal show={this.state.error1} className="dalmod">
           <Modal.Header>
             <Modal.Title>error</Modal.Title>
           </Modal.Header>
           <Modal.Body>Please fill in your account data completely</Modal.Body>
           <Modal.Footer>
             <Button
-              variant="primary"
+              variant="dark"
               onClick={() => this.setState({ error1: false })}
+              className="ButtonMod"
             >
               Close
             </Button>
           </Modal.Footer>
         </Modal>
-        <Modal show={this.state.error2}>
+        <Modal show={this.state.error2} className="dalmod">
           <Modal.Header>
             <Modal.Title>error</Modal.Title>
           </Modal.Header>
           <Modal.Body>Please input your password</Modal.Body>
           <Modal.Footer>
             <Button
-              variant="primary"
+              variant="dark"
               onClick={() => this.setState({ error2: false })}
+              className="ButtonMod"
             >
               Close
             </Button>
           </Modal.Footer>
         </Modal>
-        <Modal show={this.state.error3}>
+        <Modal show={this.state.error3} className="dalmod">
           <Modal.Header>
             <Modal.Title>error</Modal.Title>
           </Modal.Header>
           <Modal.Body>Please input your username</Modal.Body>
           <Modal.Footer>
             <Button
-              variant="primary"
+              variant="dark"
               onClick={() => this.setState({ error3: false })}
+              className="ButtonMod"
             >
               Close
             </Button>
@@ -134,15 +141,16 @@ class LoginPage extends React.Component {
         </Modal>
 
         {/* alert validasi user */}
-        <Modal show={this.props.errorLogin}>
+        <Modal className="dalmod" show={this.props.errorLogin}>
           <Modal.Header>
             <Modal.Title>error</Modal.Title>
           </Modal.Header>
           <Modal.Body>This account doesn't axis</Modal.Body>
           <Modal.Footer>
             <Button
-              variant="primary"
+              variant="dark"
               onClick={() => this.props.errorLoginFalse()}
+              className="ButtonMod"
             >
               Close
             </Button>
@@ -152,41 +160,6 @@ class LoginPage extends React.Component {
     );
   }
 }
-const styles = {
-  cont: {
-    backgroundImage:
-      "url(https://images.unsplash.com/photo-1519305124423-5ccccff55da9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80)",
-    backgroundSize: "cover",
-    backgroundPosition: "50% 65%",
-    backgroundRepeat: "no-repeat",
-    height: "100vh",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  contForm: {
-    marginTop: "10vh",
-    width: "30vw",
-    height: "66vh",
-    backgroundColor: "rgba(255, 255, 255, 0.5)",
-    padding: "4vh",
-    borderRadius: "2vh",
-  },
-  contBtn: {
-    display: "flex",
-    justifyContent: "center",
-    flexDirection: "column",
-    textAlign: "center",
-    alignItems: "center",
-  },
-  btn: {
-    width: "5vw",
-  },
-  font: {
-    fontSize: "1.2rem",
-    marginTop: "1.5vh",
-  },
-};
 
 const mapStateToProps = (state) => {
   return {

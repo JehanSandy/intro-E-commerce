@@ -1,37 +1,51 @@
 import React from "react";
-import { Navbar, Nav, Dropdown, Button, Image } from "react-bootstrap";
+import {
+  Navbar,
+  Nav,
+  Dropdown,
+  Button,
+  Badge,
+  Offcanvas,
+} from "react-bootstrap";
 import Icon from "@mdi/react";
-import { mdiCartOutline } from "@mdi/js";
-import { LOGO } from "../assets/index";
+import { mdiCartOutline, mdiMenu } from "@mdi/js";
+import "./navibar.css";
+
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { logOut } from "../redux/action";
 
 class NaviBar extends React.Component {
   render() {
+    console.log(this.props.role);
     return (
-      <Navbar fixed="top" className="px-5" style={styles.navibar} expand="lg">
+      <Navbar fixed="top" className="navibar px-5 py-0 mx-auto" expand="lg">
         <Navbar.Brand href="#home" style={styles.navfont}>
-          <Image src={LOGO} style={styles.image} />
+          <h2>
+            Buku<span style={styles.spandfont}>_coffee</span>
+          </h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" style={styles.navfont}>
+            <Nav.Link as={Link} to="/" style={styles.navfont}>
               Home
             </Nav.Link>
-            <Nav.Link href="#link" style={styles.navfont}>
+            <Nav.Link as={Link} to="/#product" style={styles.navfont}>
               Product
             </Nav.Link>
-            <Nav.Link href="#link" style={styles.navfont}>
+            <Nav.Link href="#footers" style={styles.navfont}>
               Contact Us
             </Nav.Link>
           </Nav>
-          <Button variant="outline-light">
-            <Icon path={mdiCartOutline} size={0.9} />
-          </Button>{" "}
-          <Dropdown style={{ marginLeft: "10px" }} className="px-1">
-            <Dropdown.Toggle style={styles.btn} id="dropdown-basic">
+          {this.props.role === "admin" ? null : (
+            <Button as={Link} to="/cart" variant="dark">
+              <Icon path={mdiCartOutline} size={0.9} />
+              <Badge bg="dark">{this.props.sumCar}</Badge>
+            </Button>
+          )}
+          <Dropdown className="px-1">
+            <Dropdown.Toggle id="dropdown-basic" variant="dark">
               {this.props.username ? this.props.username : "Username"}
             </Dropdown.Toggle>
 
@@ -39,7 +53,16 @@ class NaviBar extends React.Component {
               {this.props.username ? (
                 <>
                   <Dropdown.Item>Profile</Dropdown.Item>
-                  <Dropdown.Item>History</Dropdown.Item>
+                  <Dropdown.Item
+                    as={Link}
+                    to={
+                      this.props.role === "admin"
+                        ? "/historyAdmin"
+                        : "/tohistory"
+                    }
+                  >
+                    {this.props.role === "admin" ? "History Admin" : "History"}
+                  </Dropdown.Item>
                   <Dropdown.Item onClick={this.props.logOut}>
                     Log Out
                   </Dropdown.Item>
@@ -50,7 +73,7 @@ class NaviBar extends React.Component {
                     Login
                   </Dropdown.Item>
                   <Dropdown.Item as={Link} to="/register">
-                    Sign In
+                    Sign Up
                   </Dropdown.Item>
                 </>
               )}
@@ -62,25 +85,31 @@ class NaviBar extends React.Component {
   }
 }
 
+// button syle
+
 const styles = {
   navibar: {
-    // backgroundColor: "rgba(0, 25, 112, 0.7)",
-  },
-  btn: {
-    border: "none",
-    backgroundColor: "#5343bae",
+    backgroundColor: "rgba(1, 1, 1, 0.8)",
+    padding: "0",
+    borderBottom: "1px solid rgb(81, 60, 40)",
   },
   navfont: {
-    color: "#ffffff",
+    color: "rgba(255, 255, 255)",
+    marginTop: "0",
+    marginBottom: "0",
   },
-  image: {
-    height: "40px",
+  spandfont: {
+    color: "rgba(182, 137, 91)",
+    marginTop: "0",
+    marginBottom: "0",
   },
 };
 
 const mapStateToProps = (state) => {
   return {
     username: state.userReducer.username,
+    sumCar: state.userReducer.cart.length,
+    role: state.userReducer.role,
   };
 };
 
