@@ -62,14 +62,6 @@ class Navibook extends React.Component {
   }
 }
 
-const styles = {
-  navfont: {
-    color: "#ffffff",
-  },
-  image: {
-    height: "40px",
-  },
-};
 
 const mapStateToProps = (state) => {
   return {
