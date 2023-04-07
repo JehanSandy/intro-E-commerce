@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { logOut } from "../redux/action";
 
-class NaviBar extends React.Component {
+class Navibook extends React.Component {
   render() {
     return (
       <Navbar fixed="top" className="px-5" style={styles.navibar} expand="lg">
@@ -84,4 +84,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { logOut })(NaviBar);
+export default connect(mapStateToProps, { logOut })(Navibook);
