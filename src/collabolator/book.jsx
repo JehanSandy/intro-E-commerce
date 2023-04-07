@@ -63,10 +63,6 @@ class Navibook extends React.Component {
 }
 
 const styles = {
-  btn: {
-    border: "none",
-    backgroundColor: "#5343bae",
-  },
   navfont: {
     color: "#ffffff",
   },
